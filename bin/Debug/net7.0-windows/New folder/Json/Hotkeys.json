@@ -1,0 +1,8 @@
+{
+  "isAutoLoot": true,
+  "isAutoRuning": true,
+  "isCanselTarget": true,
+  "isSwitchTarget": true,
+  "canselTargetHotkey": "Z",
+  "switchTargetHotkey": "X"
+}

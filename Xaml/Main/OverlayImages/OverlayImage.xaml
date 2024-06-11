@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wuthering_Waves_comfort_vision.Xaml.Main.OverlayImages.OverlayImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wuthering_Waves_comfort_vision.Xaml.Main.OverlayImages"
+        mc:Ignorable="d"
+        Title="OverlayImage" 
+        Height="100" 
+        Width="100"
+        WindowStyle="None"
+        AllowsTransparency="True" Background="{x:Null}"
+        ShowInTaskbar="False">
+    <Grid x:Name="imageGrid">
+        <Border x:Name="border" BorderBrush="Black" BorderThickness="1">
+            <!-- <Image Source="pack://application:,,,/Assets/Characters/Rover.png" x:Name="imageDisplay"/>-->
+            <Image x:Name="imageDisplay"/>
+        </Border>
+        <Rectangle x:Name="darkOverlay" Height="0" VerticalAlignment="Top" Fill="#E5000000"/>
+        <TextBlock x:Name="cooldownTimerTextBlock" Text="" HorizontalAlignment="Center" TextAlignment="Center" Foreground="#FFA0FF98" VerticalAlignment="Bottom" FontSize="30" FontFamily="Lucida Console" FontWeight="Bold"/>
+    </Grid>
+
+</Window>

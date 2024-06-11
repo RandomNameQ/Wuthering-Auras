@@ -1,0 +1,343 @@
+[
+  {
+    "name": "BellBorneGeochelone",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\BellBorneGeochelone.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Crownless",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\Crownless.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Dreamless",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\Dreamless.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "FeilianBeringal",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\FeilianBeringal.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "ImpermanenceHeron",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\ImpermanenceHeron.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "InfernoRider",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\InfernoRider.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "LampylumenMyriad",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\LampylumenMyriad.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "MechAbomination",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\MechAbomination.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "MourningAix",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\MourningAix.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "TempestMephis",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\TempestMephis.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "ThunderingMephi",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Echo\\ThunderingMephi.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  }
+]

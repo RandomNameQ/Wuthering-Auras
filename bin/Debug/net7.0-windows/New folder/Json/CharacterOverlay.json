@@ -1,0 +1,110 @@
+{
+  "FirstHero": {
+    "overlayArea": {
+      "x": 839,
+      "y": 868,
+      "width": 75,
+      "height": 75
+    },
+    "originalArea": {
+      "x": 1752,
+      "y": 209,
+      "width": 91,
+      "height": 88
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 1
+  },
+  "SecondHero": {
+    "overlayArea": {
+      "x": 914,
+      "y": 868,
+      "width": 75,
+      "height": 75
+    },
+    "originalArea": {
+      "x": 1750,
+      "y": 340,
+      "width": 93,
+      "height": 87
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 2
+  },
+  "ThirdHero": {
+    "overlayArea": {
+      "x": 989,
+      "y": 868,
+      "width": 75,
+      "height": 75
+    },
+    "originalArea": {
+      "x": 1749,
+      "y": 474,
+      "width": 93,
+      "height": 87
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 3
+  },
+  "UltimateArea1": {
+    "overlayArea": {
+      "x": 878,
+      "y": 868,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 1754,
+      "y": 914,
+      "width": 107,
+      "height": 108
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 10
+  },
+  "UltimateArea2": {
+    "overlayArea": {
+      "x": 954,
+      "y": 868,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 1761,
+      "y": 915,
+      "width": 95,
+      "height": 98
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 20
+  },
+  "UltimateArea3": {
+    "overlayArea": {
+      "x": 1029,
+      "y": 868,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 1765,
+      "y": 918,
+      "width": 89,
+      "height": 98
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 30
+  }
+}

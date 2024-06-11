@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Aero",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Aero.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Fusion",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Fusion.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Glacio",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Glacio.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Lingering",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Lingering.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Outro",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Outro.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Rejuvenating",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Rejuvenating.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Spectro",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Spectro.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  },
+  {
+    "name": "Thunder",
+    "skill": {
+      "path": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Elemental\\Thunder.png",
+      "isCanRenderImage": false,
+      "isGlobalBuff": false,
+      "isBuffForNextCharacter": false,
+      "isCancelWhenSwapCharacter": false,
+      "isStartSoundAlert": false,
+      "isEndSoundAlert": false,
+      "isCanselIfDoubleTap": false,
+      "isShowCooldown": true,
+      "isReusedIfSpam": true,
+      "duration": 10.0,
+      "hotKeyToActivate": "Q",
+      "hotKeyDoubleTap": "Q",
+      "width": 64,
+      "height": 64,
+      "overlayImageData": {
+        "width": 50,
+        "height": 50,
+        "x": 0,
+        "y": 0,
+        "tranparency": 0
+      },
+      "elapsedTime": 0.0,
+      "spamTimer": null,
+      "spamTimerDuration": 1.0,
+      "isSpamTimerOver": false
+    }
+  }
+]

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Xaml\AppSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\BuffOverlay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\MoveScreenArea.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\OverlayImages\OverlayImage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\QOL.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Sub\EchoList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Sub\ElementalList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Sub\HeroList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\SetTeams.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Xaml\AppSettings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\BuffOverlay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\MoveScreenArea.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\OverlayImages\OverlayImage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\QOL.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Sub\EchoList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Sub\ElementalList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Sub\HeroList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\SetTeams.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

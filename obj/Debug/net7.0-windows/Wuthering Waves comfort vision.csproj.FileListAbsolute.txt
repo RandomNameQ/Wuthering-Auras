@@ -1,0 +1,46 @@
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.exe
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.deps.json
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.runtimeconfig.json
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Gma.System.MouseKeyHook.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\System.Drawing.Common.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.csproj.AssemblyReference.cache
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\AppSettings.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\BuffOverlay.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\MoveScreenArea.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayImages\OverlayImage.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\QOL.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\SetTeams.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\EchoList.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\ElementalList.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\HeroList.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision_MarkupCompile.cache
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision_MarkupCompile.lref
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\AppSettings.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\BuffOverlay.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\MoveScreenArea.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayImages\OverlayImage.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\QOL.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\SetTeams.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\EchoList.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\ElementalList.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\HeroList.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.g.resources
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.AssemblyInfoInputs.cache
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.AssemblyInfo.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.csproj.CoreCompileInputs.cache
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.csproj.CopyComplete
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\refint\Wuthering Waves comfort vision.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.pdb
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision.genruntimeconfig.cache
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.pdb
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\ref\Wuthering Waves comfort vision.dll
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision_Content.g.cs

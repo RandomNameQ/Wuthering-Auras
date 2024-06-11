@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "qHk5aGFgG0c/oNVI9boT6PsYBpS30+X7shcoQZPlicLmz0/rec8IFXPRQ6cL5CWhFIjL+HlojckWJHx/54neyg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zero\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\zero\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512",
+    "C:\\Users\\zero\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\zero\\.nuget\\packages\\system.drawing.common\\8.0.6\\system.drawing.common.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

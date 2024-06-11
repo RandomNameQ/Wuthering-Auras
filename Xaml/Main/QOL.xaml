@@ -1,0 +1,49 @@
+﻿<Page x:Class="Wuthering_Waves_comfort_vision.Xaml.Main.QOL"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wuthering_Waves_comfort_vision.Xaml.Main"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="QOL">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#aa4b6b" Offset="0"/>
+                <GradientStop Color="#6b6b83" Offset="0.5"/>
+                <GradientStop Color="#3b8d99" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid Margin="100">
+            <!-- Define Columns -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Define Rows -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Add Checkboxes -->
+            <CheckBox x:Name="PressFCheckBox" Content="Press F every 0.1sec" Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center" FontSize="20" ToolTip="Alt+F to enable or disable" VerticalContentAlignment="Center"/>
+            <CheckBox x:Name="AutoRunCheckBox" Content="Auto run" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center" FontSize="20" VerticalContentAlignment="Center" ToolTip="Alt+W/A/D to auto run. S to disable."/>
+
+            <CheckBox x:Name="CanselTargetHotkey" Content="Change cancel target hotkey" Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center" FontSize="18" VerticalContentAlignment="Center" ToolTip="Select the button and after pressing it it will simulate holding the wheel for 0.1s."/>
+            <TextBox x:Name="disableTargetTextBox" Text="S"  PreviewKeyDown="Universal_PreviewKeyDown" Grid.Row="2" Height="30" Width="50" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+            <CheckBox x:Name="SwitchTargetHotkey" Content="Change switch/lock target hotkey" Grid.Row="3" Grid.Column="0" Margin="5" VerticalAlignment="Center" FontSize="18" VerticalContentAlignment="Center" ToolTip="Select a button and after pressing it it will emulate one click of the wheel"/>
+            <TextBox x:Name="lockTargetTextBox" Text="S"  PreviewKeyDown="Universal_PreviewKeyDown" Grid.Row="3" Height="30" Width="50" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+            <Button Content="Save" Click="SaveButton_Click" Grid.Row="4" Grid.Column="0" Height="30" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFA8FF81"/>
+        </Grid>
+    </Grid>
+</Page>
