@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using Wuthering_Waves_comfort_vision.Scripts.Json;
-using Wuthering_Waves_comfort_vision.Scripts.Main;
+using Wuthering_Waves_comfort_vision.Scripts.Main.Hotkeys;
 using Wuthering_Waves_comfort_vision.Xaml;
 namespace Wuthering_Waves_comfort_vision
 {

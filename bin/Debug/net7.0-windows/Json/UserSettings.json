@@ -1,10 +1,10 @@
 {
   "LastChosen": {
-    "name": "Кальчаро",
+    "name": "Тест",
     "description": "",
     "firstHero": {
-      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Calcharo.png",
-      "name": "Calcharo",
+      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Yangyang.png",
+      "name": "Yangyang",
       "isAvaible": true,
       "shiftDelay": 1.0,
       "tier": null,
@@ -34,8 +34,8 @@
         "elapsedTime": 0.0
       },
       "echo": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Echo\\TempestMephis.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -44,19 +44,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 15.0,
-        "hotKeyToActivate": "Alt+Q",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 706,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.884779
+        "elapsedTime": 0.0
       },
       "resonance": {
         "path": "",
@@ -84,8 +84,8 @@
         "elapsedTime": 0.0
       },
       "ultimate": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Characters\\Calcharo.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -94,19 +94,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 12.2,
-        "hotKeyToActivate": "R",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 612,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.8345868
+        "elapsedTime": 0.0
       },
       "outro": {
         "path": "",
@@ -134,8 +134,8 @@
         "elapsedTime": 0.0
       },
       "element": {
-        "path": "C:\\Users\\zero\\Downloads\\ThunderElem.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -144,23 +144,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 15.0,
-        "hotKeyToActivate": "E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 753,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.803048
+        "elapsedTime": 0.0
       },
       "inherit": {
-        "path": "C:\\Users\\zero\\Downloads\\InheritKAL.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -169,19 +169,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 15.0,
-        "hotKeyToActivate": "Alt+E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 659,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.7706828
+        "elapsedTime": 0.0
       },
       "weapon": {
         "path": "",
@@ -234,33 +234,8 @@
         "elapsedTime": 0.0
       },
       "cooldownEcho": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Echo\\TempestMephis.png",
-        "isCanRenderImage": true,
-        "isGlobalBuff": false,
-        "isBuffForNextCharacter": false,
-        "isCancelWhenSwapCharacter": false,
-        "isStartSoundAlert": false,
-        "isEndSoundAlert": false,
-        "isCanselIfDoubleTap": false,
-        "isShowCooldown": true,
-        "isReusedIfSpam": true,
-        "duration": 20.0,
-        "hotKeyToActivate": "Q",
-        "hotKeyDoubleTap": "Q",
-        "width": 0,
-        "height": 0,
-        "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 706,
-          "y": 928,
-          "tranparency": 0
-        },
-        "elapsedTime": 2.5638562
-      },
-      "cooldownResonance": {
-        "path": "C:\\Users\\zero\\Downloads\\Resonance.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -270,18 +245,43 @@
         "isShowCooldown": true,
         "isReusedIfSpam": true,
         "duration": 10.0,
-        "hotKeyToActivate": "E",
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 753,
-          "y": 928,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.5852676
+        "elapsedTime": 0.0
+      },
+      "cooldownResonance": {
+        "path": "",
+        "isCanRenderImage": false,
+        "isGlobalBuff": false,
+        "isBuffForNextCharacter": false,
+        "isCancelWhenSwapCharacter": false,
+        "isStartSoundAlert": false,
+        "isEndSoundAlert": false,
+        "isCanselIfDoubleTap": false,
+        "isShowCooldown": true,
+        "isReusedIfSpam": true,
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
+        "hotKeyDoubleTap": "Q",
+        "width": 0,
+        "height": 0,
+        "overlayImageData": {
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
+          "tranparency": 0
+        },
+        "elapsedTime": 0.0
       },
       "cooldownUltimate": {
         "path": "",
@@ -516,8 +516,8 @@
         "elapsedTime": 0.0
       },
       "outro": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Characters\\Jianxin.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -526,23 +526,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 14.0,
-        "hotKeyToActivate": "Alt+D1",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 856,
-          "y": 834,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.7358267
+        "elapsedTime": 0.0
       },
       "element": {
-        "path": "C:\\Users\\zero\\Downloads\\MoonlightElem.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -551,19 +551,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 15.0,
-        "hotKeyToActivate": "Alt+D1",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 809,
-          "y": 834,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.7179207
+        "elapsedTime": 0.0
       },
       "inherit": {
         "path": "",
@@ -641,8 +641,8 @@
         "elapsedTime": 0.0
       },
       "cooldownEcho": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Echo\\BellBorneGeochelone.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -651,23 +651,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 20.0,
+        "duration": 10.0,
         "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 903,
-          "y": 834,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.535243
+        "elapsedTime": 0.0
       },
       "cooldownResonance": {
-        "path": "C:\\Users\\zero\\Downloads\\Resonance.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -676,19 +676,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 12.0,
-        "hotKeyToActivate": "E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 959,
-          "y": 834,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.4009526
+        "elapsedTime": 0.0
       },
       "cooldownUltimate": {
         "path": "",
@@ -791,8 +791,8 @@
         "elapsedTime": 0.0
       },
       "cooldownWeapon": {
-        "path": "C:\\Users\\zero\\Downloads\\Weapon.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -801,19 +801,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 20.0,
-        "hotKeyToActivate": "E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1006,
-          "y": 834,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.399578
+        "elapsedTime": 0.0
       }
     },
     "thirdHero": {
@@ -923,8 +923,8 @@
         "elapsedTime": 0.0
       },
       "outro": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Characters\\Verina.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -933,23 +933,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 30.0,
-        "hotKeyToActivate": "Alt+D1",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1156,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.6677118
+        "elapsedTime": 0.0
       },
       "element": {
-        "path": "C:\\Users\\zero\\Downloads\\RejuvenatingSET.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -958,23 +958,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 30.0,
-        "hotKeyToActivate": "Alt+D1",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1109,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.649296
+        "elapsedTime": 0.0
       },
       "inherit": {
-        "path": "C:\\Users\\zero\\Downloads\\InheritVerina.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -983,22 +983,22 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 20.0,
-        "hotKeyToActivate": "Alt+Q",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1203,
-          "y": 881,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.6146974
+        "elapsedTime": 0.0
       },
       "weapon": {
-        "path": null,
+        "path": "",
         "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
@@ -1048,8 +1048,8 @@
         "elapsedTime": 0.0
       },
       "cooldownEcho": {
-        "path": "C:\\Users\\zero\\Downloads\\Wuthering Auras 1.0.0\\Wuthering Auras 1.0.0\\Assets\\Echo\\BellBorneGeochelone.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -1058,23 +1058,23 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 20.0,
+        "duration": 10.0,
         "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1203,
-          "y": 928,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.4002236
+        "elapsedTime": 0.0
       },
       "cooldownResonance": {
-        "path": "C:\\Users\\zero\\Downloads\\Resonance.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -1083,19 +1083,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 12.0,
-        "hotKeyToActivate": "E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1109,
-          "y": 928,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.2995003
+        "elapsedTime": 0.0
       },
       "cooldownUltimate": {
         "path": "",
@@ -1198,8 +1198,8 @@
         "elapsedTime": 0.0
       },
       "cooldownWeapon": {
-        "path": "C:\\Users\\zero\\Downloads\\Weapon.png",
-        "isCanRenderImage": true,
+        "path": "",
+        "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
         "isCancelWhenSwapCharacter": false,
@@ -1208,19 +1208,19 @@
         "isCanselIfDoubleTap": false,
         "isShowCooldown": true,
         "isReusedIfSpam": true,
-        "duration": 20.0,
-        "hotKeyToActivate": "E",
+        "duration": 10.0,
+        "hotKeyToActivate": "Q",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
         "overlayImageData": {
-          "width": 47,
-          "height": 47,
-          "x": 1156,
-          "y": 928,
+          "width": 50,
+          "height": 50,
+          "x": 0,
+          "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 2.2999835
+        "elapsedTime": 0.0
       }
     }
   }

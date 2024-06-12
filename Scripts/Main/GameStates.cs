@@ -12,7 +12,7 @@ public class GameStates
     public List<Echo> Echos { get; set; } = new List<Echo>();
     public List<Elemental> Elemental { get; set; } = new List<Elemental>();
     public Team currentTeam;
-    public bool isWutheringWavesWindow;
+    public bool isGameWindow;
     public MainWindow.AppSettings appSettings = new();
 
     public Character currentCharacter;

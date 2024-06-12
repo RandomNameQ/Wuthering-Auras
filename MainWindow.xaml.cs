@@ -6,6 +6,8 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Navigation;
 using Wuthering_Waves_comfort_vision.Scripts.Main;
+using Wuthering_Waves_comfort_vision.Scripts.Sub;
+
 namespace Wuthering_Waves_comfort_vision
 {
     /// <summary>
@@ -101,8 +103,8 @@ namespace Wuthering_Waves_comfort_vision
                 if (GameStates.Instance.appSettings.isRenderBuffsOverlay)
                 {
                     var app = (App)Application.Current;
-                    app.hotkeyDetector.CollectAllHotkeys();
-                    app.hotkeyDetector.PreRenderAllImage(true);
+                    app.hotkeyDetector.HotkeyCollector.Collect();
+                    app.hotkeyDetector.BuffsHotkey.PreRenderAllImage(true);
                 }
             }
 
@@ -149,7 +151,7 @@ namespace Wuthering_Waves_comfort_vision
                 appSettings.isRenderBuffsOverlay = false;
 
                 var app = (App)Application.Current;
-                app.hotkeyDetector.PreRenderAllImage(false);
+                app.hotkeyDetector.BuffsHotkey.PreRenderAllImage(false);
                 //GlobalEvents.InvokeSaveBuffDataWhenUnRender();
 
                 SaveBuffPositionWhenUnrender();
@@ -259,7 +261,7 @@ namespace Wuthering_Waves_comfort_vision
             {
                 if (isFocused)
                 {
-                    GameStates.Instance.isWutheringWavesWindow = true;
+                    GameStates.Instance.isGameWindow = true;
                     //  CheckboxMain_DetectHotkey.Visibility = Visibility.Visible;
                     if (GameStates.Instance.appSettings.isRenderIfWutherinfWindow)
                     {
@@ -268,7 +270,7 @@ namespace Wuthering_Waves_comfort_vision
                 }
                 else
                 {
-                    GameStates.Instance.isWutheringWavesWindow = false;
+                    GameStates.Instance.isGameWindow = false;
                     //  CheckboxMain_DetectHotkey.Visibility = Visibility.Collapsed;
                     if (GameStates.Instance.appSettings.isRenderIfWutherinfWindow)
                     {

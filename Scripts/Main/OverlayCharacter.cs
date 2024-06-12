@@ -204,7 +204,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 return;
             }
 
-            if (GameStates.Instance.appSettings.isRenderIfWutherinfWindow && !GameStates.Instance.isWutheringWavesWindow)
+            if (GameStates.Instance.appSettings.isRenderIfWutherinfWindow && !GameStates.Instance.isGameWindow)
             {
 
                 for (int i = 0; i < overlayAreas.Count; i++)

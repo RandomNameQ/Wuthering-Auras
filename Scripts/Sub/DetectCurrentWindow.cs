@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Timers;
 
-namespace Wuthering_Waves_comfort_vision.Scripts.Main
+namespace Wuthering_Waves_comfort_vision.Scripts.Sub
 {
     internal class DetectCurrentWindow
     {
@@ -20,16 +20,16 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         }
 
         [DllImport("user32.dll")]
-        private static extern IntPtr GetForegroundWindow();
+        private static extern nint GetForegroundWindow();
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+        private static extern int GetWindowText(nint hWnd, StringBuilder lpString, int nMaxCount);
 
         private bool IsWutheringWavesActive()
         {
             const string partialWindowTitle = "Wuthering"; // Используем только часть названия окна для проверки
 
-            IntPtr handle = GetForegroundWindow();
+            nint handle = GetForegroundWindow();
             StringBuilder sb = new StringBuilder(256);
             GetWindowText(handle, sb, sb.Capacity);
 
@@ -48,14 +48,5 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
             }
         }
 
-        public void Stop()
-        {
-            timer.Stop();
-        }
-
-        public void Start()
-        {
-            timer.Start();
-        }
     }
 }
