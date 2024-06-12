@@ -28,9 +28,7 @@ namespace Wuthering_Waves_comfort_vision.View
             currentTeam = UserSettings.GetTeam();
             if (currentTeam == null)
             {
-                //TryLoadAnyTeam();
                 currentTeam = new();
-                //MessageBox.Show("Saved team not found");
                 return;
             }
             LoadJsonTeams();
@@ -291,9 +289,16 @@ namespace Wuthering_Waves_comfort_vision.View
             HashSet<string> teamNames = new HashSet<string>();
             foreach (var team in teams)
             {
-                if (teamNames.Add(team.name)) // Add returns false if the item already exists
+                if (teamNames.Add(team.name))
                 {
-                    TeamComboBox.Items.Add(new ComboBoxItem { Content = team.name });
+                    var comboBoxItem = new ComboBoxItem { Content = team.name };
+                    TeamComboBox.Items.Add(comboBoxItem);
+
+                    // Set the selected item if the team name matches current team's name
+                    if (team.name == currentTeam.name)
+                    {
+                        TeamComboBox.SelectedItem = comboBoxItem;
+                    }
                 }
             }
         }
@@ -303,9 +308,11 @@ namespace Wuthering_Waves_comfort_vision.View
             {
                 var teamName = selectedItem.Content.ToString();
                 currentTeam = teams.FirstOrDefault(t => t.name == teamName);
+
                 UserSettings.UpdateTeam(currentTeam);
                 if (currentTeam != null)
                 {
+                    GlobalEvents.InvokeChangedTeam();
                     UpdateTeamInterface();
                 }
             }
@@ -321,6 +328,8 @@ namespace Wuthering_Waves_comfort_vision.View
                         MessageBox.Show("Team doesnt have name");
                         return;
                     }
+                    currentTeam.ResetData();
+
                     currentTeam.firstHero.name = Helper.ReturnHeroNameWithImagePath(currentTeam.firstHero.imagePath);
                     currentTeam.secondHero.name = Helper.ReturnHeroNameWithImagePath(currentTeam.secondHero.imagePath);
                     currentTeam.thirdHero.name = Helper.ReturnHeroNameWithImagePath(currentTeam.thirdHero.imagePath);
@@ -346,6 +355,7 @@ namespace Wuthering_Waves_comfort_vision.View
         }
         public void UpdateTeamInterface()
         {
+
             // Обновление интерфейса для первого героя
             UpdateHeroInterface(FirstHeroButton, currentTeam.firstHero);
             UpdateEchoInterface(FirstEchoButton, currentTeam.firstHero.echo);
@@ -360,6 +370,10 @@ namespace Wuthering_Waves_comfort_vision.View
             UpdateElementalInterface(ThirdElementButton, currentTeam.thirdHero.element);
             NameTextBox.Text = currentTeam.name;
             DescriptionTextBox.Text = currentTeam.description;
+
+            //TeamComboBox.ItemsSource = NameTextBox.Text;
+            //  TeamComboBox.DisplayMemberPath = NameTextBox.Text;
+
             GameStates.Instance.currentTeam = currentTeam;
         }
         private void UpdateHeroInterface(Button heroButton, Character hero)

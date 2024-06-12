@@ -10,53 +10,53 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="Assets\Characters\Aalto.png" />
-	  <None Remove="Assets\Characters\Baizhi.png" />
-	  <None Remove="Assets\Characters\Calcharo.png" />
-	  <None Remove="Assets\Characters\Chixia.png" />
-	  <None Remove="Assets\Characters\Danjin.png" />
-	  <None Remove="Assets\Characters\Encore.png" />
-	  <None Remove="Assets\Characters\Jianxin.png" />
-	  <None Remove="Assets\Characters\Jiyan.png" />
-	  <None Remove="Assets\Characters\Lingyang.png" />
-	  <None Remove="Assets\Characters\Mortefi.png" />
-	  <None Remove="Assets\Characters\Rover.png" />
-	  <None Remove="Assets\Characters\Sanhua.png" />
-	  <None Remove="Assets\Characters\Taoqi.png" />
-	  <None Remove="Assets\Characters\Verina.png" />
-	  <None Remove="Assets\Characters\Yangyang.png" />
-	  <None Remove="Assets\Characters\Yinlin.png" />
-	  <None Remove="Assets\Characters\Yuanwu.png" />
-	  <None Remove="Assets\Echo\BellBorneGeochelone.png" />
-	  <None Remove="Assets\Echo\Crownless.png" />
-	  <None Remove="Assets\Echo\Dreamless.png" />
-	  <None Remove="Assets\Echo\FeilianBeringal.png" />
-	  <None Remove="Assets\Echo\ImpermanenceHeron.png" />
-	  <None Remove="Assets\Echo\InfernoRider.png" />
-	  <None Remove="Assets\Echo\LampylumenMyriad.png" />
-	  <None Remove="Assets\Echo\MechAbomination.png" />
-	  <None Remove="Assets\Echo\MourningAix.png" />
-	  <None Remove="Assets\Echo\TempestMephis.png" />
-	  <None Remove="Assets\Echo\ThunderingMephi.png" />
-	  <None Remove="Assets\Elemental\Aero.png" />
-	  <None Remove="Assets\Elemental\Fusion.png" />
-	  <None Remove="Assets\Elemental\Glacio.png" />
-	  <None Remove="Assets\Elemental\Lingering.png" />
-	  <None Remove="Assets\Elemental\Outro.png" />
-	  <None Remove="Assets\Elemental\Rejuvenating.png" />
-	  <None Remove="Assets\Elemental\Spectro.png" />
-	  <None Remove="Assets\Elemental\Thunder.png" />
-	  <None Remove="Assets\QuestMark.png" />
+		<None Remove="Assets\Characters\Aalto.png" />
+		<None Remove="Assets\Characters\Baizhi.png" />
+		<None Remove="Assets\Characters\Calcharo.png" />
+		<None Remove="Assets\Characters\Chixia.png" />
+		<None Remove="Assets\Characters\Danjin.png" />
+		<None Remove="Assets\Characters\Encore.png" />
+		<None Remove="Assets\Characters\Jianxin.png" />
+		<None Remove="Assets\Characters\Jiyan.png" />
+		<None Remove="Assets\Characters\Lingyang.png" />
+		<None Remove="Assets\Characters\Mortefi.png" />
+		<None Remove="Assets\Characters\Rover.png" />
+		<None Remove="Assets\Characters\Sanhua.png" />
+		<None Remove="Assets\Characters\Taoqi.png" />
+		<None Remove="Assets\Characters\Verina.png" />
+		<None Remove="Assets\Characters\Yangyang.png" />
+		<None Remove="Assets\Characters\Yinlin.png" />
+		<None Remove="Assets\Characters\Yuanwu.png" />
+		<None Remove="Assets\Echo\BellBorneGeochelone.png" />
+		<None Remove="Assets\Echo\Crownless.png" />
+		<None Remove="Assets\Echo\Dreamless.png" />
+		<None Remove="Assets\Echo\FeilianBeringal.png" />
+		<None Remove="Assets\Echo\ImpermanenceHeron.png" />
+		<None Remove="Assets\Echo\InfernoRider.png" />
+		<None Remove="Assets\Echo\LampylumenMyriad.png" />
+		<None Remove="Assets\Echo\MechAbomination.png" />
+		<None Remove="Assets\Echo\MourningAix.png" />
+		<None Remove="Assets\Echo\TempestMephis.png" />
+		<None Remove="Assets\Echo\ThunderingMephi.png" />
+		<None Remove="Assets\Elemental\Aero.png" />
+		<None Remove="Assets\Elemental\Fusion.png" />
+		<None Remove="Assets\Elemental\Glacio.png" />
+		<None Remove="Assets\Elemental\Lingering.png" />
+		<None Remove="Assets\Elemental\Outro.png" />
+		<None Remove="Assets\Elemental\Rejuvenating.png" />
+		<None Remove="Assets\Elemental\Spectro.png" />
+		<None Remove="Assets\Elemental\Thunder.png" />
+		<None Remove="Assets\QuestMark.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="madara-eternal.ico" />
+		<Content Include="madara-eternal.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="MouseKeyHook" Version="5.7.1" />
-	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-	  <PackageReference Include="System.Drawing.Common" Version="8.0.6" />
+		<PackageReference Include="MouseKeyHook" Version="5.7.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="System.Drawing.Common" Version="8.0.6" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -64,43 +64,43 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Assets\Characters\Aalto.png" />
-	  <Resource Include="Assets\Characters\Baizhi.png" />
-	  <Resource Include="Assets\Characters\Calcharo.png" />
-	  <Resource Include="Assets\Characters\Chixia.png" />
-	  <Resource Include="Assets\Characters\Danjin.png" />
-	  <Resource Include="Assets\Characters\Encore.png" />
-	  <Resource Include="Assets\Characters\Jianxin.png" />
-	  <Resource Include="Assets\Characters\Jiyan.png" />
-	  <Resource Include="Assets\Characters\Lingyang.png" />
-	  <Resource Include="Assets\Characters\Mortefi.png" />
-	  <Resource Include="Assets\Characters\Rover.png" />
-	  <Resource Include="Assets\Characters\Sanhua.png" />
-	  <Resource Include="Assets\Characters\Taoqi.png" />
-	  <Resource Include="Assets\Characters\Verina.png" />
-	  <Resource Include="Assets\Characters\Yangyang.png" />
-	  <Resource Include="Assets\Characters\Yinlin.png" />
-	  <Resource Include="Assets\Characters\Yuanwu.png" />
-	  <Resource Include="Assets\Echo\BellBorneGeochelone.png" />
-	  <Resource Include="Assets\Echo\Crownless.png" />
-	  <Resource Include="Assets\Echo\Dreamless.png" />
-	  <Resource Include="Assets\Echo\FeilianBeringal.png" />
-	  <Resource Include="Assets\Echo\ImpermanenceHeron.png" />
-	  <Resource Include="Assets\Echo\InfernoRider.png" />
-	  <Resource Include="Assets\Echo\LampylumenMyriad.png" />
-	  <Resource Include="Assets\Echo\MechAbomination.png" />
-	  <Resource Include="Assets\Echo\MourningAix.png" />
-	  <Resource Include="Assets\Echo\TempestMephis.png" />
-	  <Resource Include="Assets\Echo\ThunderingMephi.png" />
-	  <Resource Include="Assets\Elemental\Aero.png" />
-	  <Resource Include="Assets\Elemental\Fusion.png" />
-	  <Resource Include="Assets\Elemental\Glacio.png" />
-	  <Resource Include="Assets\Elemental\Lingering.png" />
-	  <Resource Include="Assets\Elemental\Outro.png" />
-	  <Resource Include="Assets\Elemental\Rejuvenating.png" />
-	  <Resource Include="Assets\Elemental\Spectro.png" />
-	  <Resource Include="Assets\Elemental\Thunder.png" />
-	  <Resource Include="Assets\QuestMark.png" />
+		<Resource Include="Assets\Characters\Aalto.png" />
+		<Resource Include="Assets\Characters\Baizhi.png" />
+		<Resource Include="Assets\Characters\Calcharo.png" />
+		<Resource Include="Assets\Characters\Chixia.png" />
+		<Resource Include="Assets\Characters\Danjin.png" />
+		<Resource Include="Assets\Characters\Encore.png" />
+		<Resource Include="Assets\Characters\Jianxin.png" />
+		<Resource Include="Assets\Characters\Jiyan.png" />
+		<Resource Include="Assets\Characters\Lingyang.png" />
+		<Resource Include="Assets\Characters\Mortefi.png" />
+		<Resource Include="Assets\Characters\Rover.png" />
+		<Resource Include="Assets\Characters\Sanhua.png" />
+		<Resource Include="Assets\Characters\Taoqi.png" />
+		<Resource Include="Assets\Characters\Verina.png" />
+		<Resource Include="Assets\Characters\Yangyang.png" />
+		<Resource Include="Assets\Characters\Yinlin.png" />
+		<Resource Include="Assets\Characters\Yuanwu.png" />
+		<Resource Include="Assets\Echo\BellBorneGeochelone.png" />
+		<Resource Include="Assets\Echo\Crownless.png" />
+		<Resource Include="Assets\Echo\Dreamless.png" />
+		<Resource Include="Assets\Echo\FeilianBeringal.png" />
+		<Resource Include="Assets\Echo\ImpermanenceHeron.png" />
+		<Resource Include="Assets\Echo\InfernoRider.png" />
+		<Resource Include="Assets\Echo\LampylumenMyriad.png" />
+		<Resource Include="Assets\Echo\MechAbomination.png" />
+		<Resource Include="Assets\Echo\MourningAix.png" />
+		<Resource Include="Assets\Echo\TempestMephis.png" />
+		<Resource Include="Assets\Echo\ThunderingMephi.png" />
+		<Resource Include="Assets\Elemental\Aero.png" />
+		<Resource Include="Assets\Elemental\Fusion.png" />
+		<Resource Include="Assets\Elemental\Glacio.png" />
+		<Resource Include="Assets\Elemental\Lingering.png" />
+		<Resource Include="Assets\Elemental\Outro.png" />
+		<Resource Include="Assets\Elemental\Rejuvenating.png" />
+		<Resource Include="Assets\Elemental\Spectro.png" />
+		<Resource Include="Assets\Elemental\Thunder.png" />
+		<Resource Include="Assets\QuestMark.png" />
 	</ItemGroup>
 
 </Project>

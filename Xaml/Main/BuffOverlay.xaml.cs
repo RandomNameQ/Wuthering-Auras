@@ -30,10 +30,6 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
         {
             GlobalEvents.SaveWhenBuffUnrender -= SaveUpdatedPositionAfterDestoryClass;
 
-            //ProcessHeroAbilities(GameStates.Instance.currentTeam.firstHero);
-            //ProcessHeroAbilities(GameStates.Instance.currentTeam.secondHero);
-            //ProcessHeroAbilities(GameStates.Instance.currentTeam.thirdHero);
-            //GameStates.Instance.currentTeam.SaveAllHero();
         }
 
         private void ProcessHeroAbilities(object hero)
@@ -58,13 +54,6 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
 
         private void SaveUpdatedPositionAfterDestoryClass()
         {
-            //GameStates.Instance.currentTeam.firstHero.SaveSkillData();
-            //GameStates.Instance.currentTeam.secondHero.SaveSkillData();
-            //GameStates.Instance.currentTeam.thirdHero.SaveSkillData();
-
-
-            //UserSettings.UpdateTeam(GameStates.Instance.currentTeam);
-            //LoadDataAbility();
 
             return;
             FieldInfo[] fields = GameStates.Instance.currentTeam.firstHero.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);

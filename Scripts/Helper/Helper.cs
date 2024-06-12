@@ -123,7 +123,7 @@ public static class Helper
             //ResizeMode = ResizeMode.CanResizeWithGrip,
 
             AllowsTransparency = true,
-            Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(100, 255, 255, 255)),
+            Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(1, 255, 255, 255)),
             Topmost = true,
             ShowInTaskbar = false
 

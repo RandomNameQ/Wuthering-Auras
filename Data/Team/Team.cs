@@ -16,6 +16,13 @@
             thirdHero.SaveSkillData();
         }
 
+        public void ResetData()
+        {
+            firstHero.ResetData();
+            secondHero.ResetData();
+            thirdHero.ResetData();
+        }
+
 
     }
 }

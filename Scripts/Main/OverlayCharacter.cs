@@ -17,6 +17,15 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         public OverlayArea UltimateArea1 { get; set; } = new OverlayArea();
         public OverlayArea UltimateArea2 { get; set; } = new OverlayArea();
         public OverlayArea UltimateArea3 { get; set; } = new OverlayArea();
+
+        public OverlayArea Concert1 { get; set; } = new OverlayArea();
+        public OverlayArea Concert2 { get; set; } = new OverlayArea();
+        public OverlayArea Concert3 { get; set; } = new OverlayArea();
+
+        public OverlayArea Forte1 { get; set; } = new OverlayArea();
+        public OverlayArea Forte2 { get; set; } = new OverlayArea();
+        public OverlayArea Forte3 { get; set; } = new OverlayArea();
+
         public List<OverlayArea> overlayAreas = new List<OverlayArea>();
         private System.Windows.Threading.DispatcherTimer timer;
         private List<OverlayImage> overlayImages = new();
@@ -24,13 +33,18 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         public bool isShowOverlay = false;
         public bool isFirstRender;
         public bool firstLoad = true;
+        private bool isTimerRunning;
         public OverlayCharacter()
         {
             GlobalEvents.ChangeRenderState += ChangeRenderState;
+            GlobalEvents.TeamHasBeenChanged += UpdateImagesForChangedTeam;
+        }
+        private void UpdateImagesForChangedTeam()
+        {
+            StopRenderOverlay();
         }
         public void LoadJson()
         {
-
             overlayAreas.Clear();
             overlayImages.Clear();
 
@@ -41,20 +55,51 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 FirstHero = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.FirstHero));
                 SecondHero = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.SecondHero));
                 ThirdHero = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.ThirdHero));
+
                 UltimateArea1 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.UltimateArea1));
                 UltimateArea2 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.UltimateArea2));
                 UltimateArea3 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.UltimateArea3));
+
+                Concert1 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert1));
+                Concert2 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert2));
+                Concert3 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert3));
+
+                Forte1 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte1));
+                Forte2 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte2));
+                Forte3 = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte3));
+
+
             }
 
             UltimateArea1.currentCharacter = GameStates.Instance.currentTeam.firstHero;
             UltimateArea2.currentCharacter = GameStates.Instance.currentTeam.secondHero;
             UltimateArea3.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
+
+            Concert1.currentCharacter = GameStates.Instance.currentTeam.firstHero;
+            Concert2.currentCharacter = GameStates.Instance.currentTeam.secondHero;
+            Concert3.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
+
+            Forte1.currentCharacter = GameStates.Instance.currentTeam.firstHero;
+            Forte2.currentCharacter = GameStates.Instance.currentTeam.secondHero;
+            Forte3.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
+
             overlayAreas.Add(FirstHero);
             overlayAreas.Add(SecondHero);
             overlayAreas.Add(ThirdHero);
+
             overlayAreas.Add(UltimateArea1);
             overlayAreas.Add(UltimateArea2);
             overlayAreas.Add(UltimateArea3);
+
+            overlayAreas.Add(Concert1);
+            overlayAreas.Add(Concert2);
+            overlayAreas.Add(Concert3);
+
+            overlayAreas.Add(Forte1);
+            overlayAreas.Add(Forte2);
+            overlayAreas.Add(Forte3);
+
+
             if (overlayImages.Count == 0)
             {
                 for (int i = 0; i < overlayAreas.Count; i++)
@@ -68,39 +113,28 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         }
         public void SaveJson()
         {
-            var image = overlayImages[0];
-            FirstHero.overlayArea.y = (int)image.Top;
-            FirstHero.overlayArea.x = (int)image.Left;
-            FirstHero.overlayArea.width = (int)image.Width;
-            FirstHero.overlayArea.height = (int)image.Height;
-            image = overlayImages[1];
-            SecondHero.overlayArea.y = (int)image.Top;
-            SecondHero.overlayArea.x = (int)image.Left;
-            SecondHero.overlayArea.width = (int)image.Width;
-            SecondHero.overlayArea.height = (int)image.Height;
-            image = overlayImages[2];
-            ThirdHero.overlayArea.y = (int)image.Top;
-            ThirdHero.overlayArea.x = (int)image.Left;
-            ThirdHero.overlayArea.width = (int)image.Width;
-            ThirdHero.overlayArea.height = (int)image.Height;
-            image = overlayImages[3];
-            UltimateArea1.overlayArea.y = (int)image.Top;
-            UltimateArea1.overlayArea.x = (int)image.Left;
-            UltimateArea1.overlayArea.width = (int)image.Width;
-            UltimateArea1.overlayArea.height = (int)image.Height;
-            UltimateArea1.isStopUpdateIfNewCharacter = true;
-            image = overlayImages[4];
-            UltimateArea2.overlayArea.y = (int)image.Top;
-            UltimateArea2.overlayArea.x = (int)image.Left;
-            UltimateArea2.overlayArea.width = (int)image.Width;
-            UltimateArea2.overlayArea.height = (int)image.Height;
-            UltimateArea2.isStopUpdateIfNewCharacter = true;
-            image = overlayImages[5];
-            UltimateArea3.overlayArea.y = (int)image.Top;
-            UltimateArea3.overlayArea.x = (int)image.Left;
-            UltimateArea3.overlayArea.width = (int)image.Width;
-            UltimateArea3.overlayArea.height = (int)image.Height;
-            UltimateArea3.isStopUpdateIfNewCharacter = true;
+            if (overlayImages.Count == 0)
+            {
+                return;
+            }
+
+            UpdateOverlayArea(FirstHero, overlayImages[0]);
+            UpdateOverlayArea(SecondHero, overlayImages[1]);
+            UpdateOverlayArea(ThirdHero, overlayImages[2]);
+
+            UpdateOverlayArea(UltimateArea1, overlayImages[3], true);
+            UpdateOverlayArea(UltimateArea2, overlayImages[4], true);
+            UpdateOverlayArea(UltimateArea3, overlayImages[5], true);
+
+            UpdateOverlayArea(Concert1, overlayImages[6], true);
+            UpdateOverlayArea(Concert2, overlayImages[7], true);
+            UpdateOverlayArea(Concert3, overlayImages[8], true);
+
+            UpdateOverlayArea(Forte1, overlayImages[9], true);
+            UpdateOverlayArea(Forte2, overlayImages[10], true);
+            UpdateOverlayArea(Forte3, overlayImages[11], true);
+
+
             var settings = new
             {
                 FirstHero = FirstHero,
@@ -108,11 +142,34 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 ThirdHero = ThirdHero,
                 UltimateArea1 = UltimateArea1,
                 UltimateArea2 = UltimateArea2,
-                UltimateArea3 = UltimateArea3
+                UltimateArea3 = UltimateArea3,
+
+                Concert1 = Concert1,
+                Concert2 = Concert2,
+                Concert3 = Concert3,
+                Forte1 = Forte1,
+                Forte2 = Forte2,
+                Forte3 = Forte3,
             };
             string jsonData = JsonConvert.SerializeObject(settings, Formatting.Indented);
             File.WriteAllText(filePath, jsonData);
         }
+
+        private void UpdateOverlayArea(OverlayArea overlayArea, OverlayImage image, bool isStopUpdateIfNewCharacter = false)
+        {
+            overlayArea.overlayArea.y = (int)image.Top;
+            overlayArea.overlayArea.x = (int)image.Left;
+            overlayArea.overlayArea.width = (int)image.Width;
+            overlayArea.overlayArea.height = (int)image.Height;
+
+            // Since isStopUpdateIfNewCharacter is part of OverlayArea, it should be set separately
+            if (overlayArea != null)
+            {
+                overlayArea.isStopUpdateIfNewCharacter = isStopUpdateIfNewCharacter;
+            }
+
+        }
+
         public void StartRenderOverlay()
         {
             LoadJson();
@@ -126,6 +183,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         }
         private void StartUpdateTimer()
         {
+            isTimerRunning = true;
             if (timer == null)
             {
                 timer = new System.Windows.Threading.DispatcherTimer();
@@ -133,10 +191,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 timer.Tick += Timer_Tick;
                 timer.Start();
             }
-            else
-            {
-                ResumeTimer();
-            }
+
         }
 
 
@@ -144,7 +199,10 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         private void Timer_Tick(object sender, EventArgs e)
         {
 
-
+            if (!isTimerRunning)
+            {
+                return;
+            }
 
             if (GameStates.Instance.appSettings.isRenderIfWutherinfWindow && !GameStates.Instance.isWutheringWavesWindow)
             {
@@ -200,31 +258,16 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         }
         private void StopTimer()
         {
+            isTimerRunning = false;
             timer?.Stop();
+            timer = null;
             for (int i = 0; i < overlayImages.Count; i++)
             {
-                //overlayImages[i].Close();
-                overlayImages[i].Hide();
+                overlayImages[i].Close();
+                // overlayImages[i].Hide();
             }
         }
-        private void PauseTimer()
-        {
-            if (timer != null)
-            {
-                timer.Stop();
-                for (int i = 0; i < overlayImages.Count; i++)
-                {
-                    overlayImages[i].Hide();
-                }
-            }
-        }
-        private void ResumeTimer()
-        {
-            if (timer != null && !timer.IsEnabled)
-            {
-                timer.Start();
-            }
-        }
+
         private bool disposedValue = false;
         protected virtual void Dispose(bool disposing)
         {
@@ -250,13 +293,39 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
         }
         public void ChangeRenderState(bool isRenderNow)
         {
+
             if (isRenderNow)
             {
-                StopTimer();
+                if (timer != null)
+                {
+                    PauseTimer();
+
+                }
             }
             else
             {
-                ResumeTimer();
+                if (timer != null)
+                {
+                    ResumeTimer();
+                }
+            }
+        }
+        private void PauseTimer()
+        {
+            if (timer != null)
+            {
+                timer.Stop();
+                for (int i = 0; i < overlayImages.Count; i++)
+                {
+                    overlayImages[i].Hide();
+                }
+            }
+        }
+        private void ResumeTimer()
+        {
+            if (timer != null && !timer.IsEnabled)
+            {
+                timer.Start();
             }
         }
     }

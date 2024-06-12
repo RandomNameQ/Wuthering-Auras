@@ -1,0 +1,218 @@
+{
+  "FirstHero": {
+    "overlayArea": {
+      "x": 770,
+      "y": 960,
+      "width": 247,
+      "height": 14
+    },
+    "originalArea": {
+      "x": 1762,
+      "y": 224,
+      "width": 81,
+      "height": 69
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 1
+  },
+  "SecondHero": {
+    "overlayArea": {
+      "x": 770,
+      "y": 917,
+      "width": 246,
+      "height": 14
+    },
+    "originalArea": {
+      "x": 1761,
+      "y": 355,
+      "width": 81,
+      "height": 69
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 2
+  },
+  "ThirdHero": {
+    "overlayArea": {
+      "x": 770,
+      "y": 874,
+      "width": 248,
+      "height": 14
+    },
+    "originalArea": {
+      "x": 1763,
+      "y": 487,
+      "width": 81,
+      "height": 69
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": false,
+    "isOverlayEnable": true,
+    "number": 3
+  },
+  "UltimateArea1": {
+    "overlayArea": {
+      "x": 639,
+      "y": 935,
+      "width": 54,
+      "height": 44
+    },
+    "originalArea": {
+      "x": 1754,
+      "y": 914,
+      "width": 107,
+      "height": 108
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 10
+  },
+  "UltimateArea2": {
+    "overlayArea": {
+      "x": 642,
+      "y": 890,
+      "width": 54,
+      "height": 44
+    },
+    "originalArea": {
+      "x": 1761,
+      "y": 915,
+      "width": 95,
+      "height": 98
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 20
+  },
+  "UltimateArea3": {
+    "overlayArea": {
+      "x": 647,
+      "y": 844,
+      "width": 54,
+      "height": 44
+    },
+    "originalArea": {
+      "x": 1765,
+      "y": 918,
+      "width": 89,
+      "height": 98
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 30
+  },
+  "Concert1": {
+    "overlayArea": {
+      "x": 737,
+      "y": 938,
+      "width": 33,
+      "height": 37
+    },
+    "originalArea": {
+      "x": 720,
+      "y": 972,
+      "width": 57,
+      "height": 60
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  },
+  "Concert2": {
+    "overlayArea": {
+      "x": 735,
+      "y": 897,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 719,
+      "y": 974,
+      "width": 58,
+      "height": 59
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  },
+  "Concert3": {
+    "overlayArea": {
+      "x": 736,
+      "y": 854,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 719,
+      "y": 972,
+      "width": 57,
+      "height": 62
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  },
+  "Forte1": {
+    "overlayArea": {
+      "x": 705,
+      "y": 938,
+      "width": 32,
+      "height": 37
+    },
+    "originalArea": {
+      "x": 810,
+      "y": 996,
+      "width": 286,
+      "height": 14
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  },
+  "Forte2": {
+    "overlayArea": {
+      "x": 701,
+      "y": 897,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 810,
+      "y": 996,
+      "width": 286,
+      "height": 14
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  },
+  "Forte3": {
+    "overlayArea": {
+      "x": 701,
+      "y": 854,
+      "width": 35,
+      "height": 35
+    },
+    "originalArea": {
+      "x": 810,
+      "y": 996,
+      "width": 286,
+      "height": 14
+    },
+    "screenRefreshRate": 0.1,
+    "isStopUpdateIfNewCharacter": true,
+    "isOverlayEnable": true,
+    "number": 0
+  }
+}

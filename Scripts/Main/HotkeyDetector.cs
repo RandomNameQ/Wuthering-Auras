@@ -56,6 +56,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 AddHotKeyToDictionary(character.outro, buffsHotkeys);
                 AddHotKeyToDictionary(character.element, buffsHotkeys);
                 AddHotKeyToDictionary(character.inherit, buffsHotkeys);
+                AddHotKeyToDictionary(character.weapon, buffsHotkeys);
             }
             void AddCooldownHotKeyIfRenderable(Character character)
             {
@@ -66,6 +67,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
                 AddHotKeyToDictionary(character.cooldownOutro, cooldownHotkeys);
                 AddHotKeyToDictionary(character.cooldownElement, cooldownHotkeys);
                 AddHotKeyToDictionary(character.cooldownInherit, cooldownHotkeys);
+                AddHotKeyToDictionary(character.cooldownWeapon, cooldownHotkeys);
             }
             void AddHotKeyToDictionary(Ability ability, Dictionary<Ability, KeyGesture> dictionary)
             {
@@ -178,24 +180,8 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
             // Перебор всех записей в словаре
             Buff_Input(key, modifiers, currentModifiers);
             Cooldown_Input(key, modifiers);
-            if (key == Key.Escape)
-            {
-                return;
-                needPause = !needPause;
-                if (needPause)
-                {
-                    Pause();
-                    GlobalEvents.InvokeRenderState();
-                }
-                else
-                {
-                    Unpause();
-                    GlobalEvents.InvokeRenderState();
-                }
-            }
-            if (key == Key.R)
-            {
-            }
+
+
             SwitchRenderState_Input(key);
             ChangeCharacter(key);
             AutoEvents(key, modifiers);
@@ -308,17 +294,17 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main
             if (hero == GameStates.Instance.currentTeam.firstHero)
             {
                 firstHeroTimer?.Dispose();
-                firstHeroTimer = new Timer(CooldownCallback, hero, 1000, Timeout.Infinite); // 1 second cooldown
+                firstHeroTimer = new Timer(CooldownCallback, hero, 1100, Timeout.Infinite); // 1 second cooldown
             }
             else if (hero == GameStates.Instance.currentTeam.secondHero)
             {
                 secondHeroTimer?.Dispose();
-                secondHeroTimer = new Timer(CooldownCallback, hero, 1000, Timeout.Infinite); // 1 second cooldown
+                secondHeroTimer = new Timer(CooldownCallback, hero, 1100, Timeout.Infinite); // 1 second cooldown
             }
             else if (hero == GameStates.Instance.currentTeam.thirdHero)
             {
                 thirdHeroTimer?.Dispose();
-                thirdHeroTimer = new Timer(CooldownCallback, hero, 1000, Timeout.Infinite); // 1 second cooldown
+                thirdHeroTimer = new Timer(CooldownCallback, hero, 1100, Timeout.Infinite); // 1 second cooldown
             }
         }
         private void CooldownCallback(object state)

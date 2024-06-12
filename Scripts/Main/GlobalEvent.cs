@@ -35,8 +35,15 @@ public static class GlobalEvents
 
     }
 
+
     public static void InvokeSwitchMoveImagePosibility(bool canControlSizePositionIcon)
     {
         SwitchMoveImagePosibility?.Invoke(canControlSizePositionIcon);
+    }
+    public static event Action TeamHasBeenChanged;
+
+    public static void InvokeChangedTeam()
+    {
+        TeamHasBeenChanged?.Invoke();
     }
 }

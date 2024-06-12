@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Media;
@@ -48,6 +49,9 @@ public class Ability
     //сделать чтобы когнда отображаю бафы можно было сохарнять позици и размер в рендере
     [NonSerialized]
     public bool isImageRanderForBuffOverlay;
+
+
+
     public class RenderBuffs
     {
         public Ability ability;
@@ -465,6 +469,54 @@ public class Ability
         //width = overlayImageData.width;
         //height = overlayImageData.height;
     }
+
+    public void ResetData()
+    {
+
+        image = null;
+        path = string.Empty;
+        isCanRenderImage = false;
+        isImageNowRender = false;
+        isGlobalBuff = false;
+        isBuffForNextCharacter = false;
+        isCancelWhenSwapCharacter = false;
+        isStartSoundAlert = false;
+        isEndSoundAlert = false;
+        isCanselIfDoubleTap = false;
+        isShowCooldown = true;
+        isReusedIfSpam = true;
+        isCooldownImage = false;
+        duration = 10;
+        hotKeyToActivate = "Q";
+        hotKeyDoubleTap = "Q";
+        width = 0;
+        height = 0;
+        overlayImageData = new OverlayImageData();
+        timer = null;
+        startTime = default(DateTime);
+        imageWindow = null;
+        buffedCharacter = null;
+        elapsedTime = 0;
+        renderCooldown = null;
+        renderBuffs = null;
+        spamTimer = null;
+        spamTimerDuration = 1;
+        isSpamTimerOver = false;
+        isImageRanderForBuffOverlay = false;
+
+        return;
+        // приводим все поля к дефолтным значениям
+        var type = typeof(Ability);
+        foreach (var field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+        {
+            if (field.IsNotSerialized) continue;
+
+            object defaultValue = field.FieldType.IsValueType ? Activator.CreateInstance(field.FieldType) : null;
+            field.SetValue(this, defaultValue);
+        }
+    }
+
+
     private void OnChangeRenderState(bool isRenderNow)
     {
         if (imageWindow == null) return;

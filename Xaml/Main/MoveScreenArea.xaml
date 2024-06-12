@@ -48,6 +48,14 @@
                     <ComboBoxItem Tag="firstUltimate" Content="Copy first ultimate" />
                     <ComboBoxItem Tag="secondUltimate" Content="Copy second ultimate" />
                     <ComboBoxItem Tag="thirdUltimate" Content="Copy third ultimate" />
+
+                    <ComboBoxItem Tag="firstConcert" Content="Copy first Concert" />
+                    <ComboBoxItem Tag="secondConcert" Content="Copy second Concert" />
+                    <ComboBoxItem Tag="thirdConcert" Content="Copy third Concert" />
+
+                    <ComboBoxItem Tag="firstForte" Content="Copy first Forte" />
+                    <ComboBoxItem Tag="secondForte" Content="Copy second Forte" />
+                    <ComboBoxItem Tag="thirdForte" Content="Copy third Forte" />
                 </ComboBox>
 
                 <CheckBox x:Name="EnableOverlay" 

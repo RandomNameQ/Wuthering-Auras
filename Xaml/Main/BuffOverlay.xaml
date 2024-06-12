@@ -119,6 +119,7 @@
                     <ComboBoxItem Content="outro" />
                     <ComboBoxItem Content="element" />
                     <ComboBoxItem Content="inherit" />
+                    <ComboBoxItem Content="weapon" />
                     <ComboBoxItem Content="cooldownIntro" />
                     <ComboBoxItem Content="cooldownEcho" />
                     <ComboBoxItem Content="cooldownResonance" />
@@ -126,6 +127,7 @@
                     <ComboBoxItem Content="cooldownOutro" />
                     <ComboBoxItem Content="cooldownElement" />
                     <ComboBoxItem Content="cooldownInherit" />
+                    <ComboBoxItem Content="cooldownWeapon" />
                 </ComboBox>
                 <CheckBox ToolTip="Cheked: icon will render" x:Name="NeedActivateCheckBox" Content="Show image" FontSize="18" VerticalContentAlignment="Center" BorderBrush="White" Foreground="White"  />
                 <CheckBox ToolTip="Does not work" x:Name="GlobalBuffCheckBox" Content="Global buff"  FontSize="18" VerticalContentAlignment="Center" BorderBrush="White" Foreground="White"  />

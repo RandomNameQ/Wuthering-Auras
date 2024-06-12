@@ -22,6 +22,7 @@ public class Character
     public Ability outro = new();
     public Ability element = new();
     public Ability inherit = new();
+    public Ability weapon = new();
 
     public Ability cooldownIntro = new();
     public Ability cooldownEcho = new();
@@ -30,6 +31,7 @@ public class Character
     public Ability cooldownOutro = new();
     public Ability cooldownElement = new();
     public Ability cooldownInherit = new();
+    public Ability cooldownWeapon = new();
 
 
 
@@ -44,6 +46,7 @@ public class Character
         outro.buffedCharacter = this;
         element.buffedCharacter = this;
         inherit.buffedCharacter = this;
+        weapon.buffedCharacter = this;
 
         cooldownIntro.buffedCharacter = this;
         cooldownEcho.buffedCharacter = this;
@@ -52,6 +55,7 @@ public class Character
         cooldownOutro.buffedCharacter = this;
         cooldownElement.buffedCharacter = this;
         cooldownInherit.buffedCharacter = this;
+        cooldownWeapon.buffedCharacter = this;
     }
 
     public void SaveSkillData()
@@ -63,6 +67,7 @@ public class Character
         outro.SaveData();
         element.SaveData();
         inherit.SaveData();
+        weapon.SaveData();
 
         cooldownIntro.SaveData();
         cooldownEcho.SaveData();
@@ -71,5 +76,27 @@ public class Character
         cooldownOutro.SaveData();
         cooldownElement.SaveData();
         cooldownInherit.SaveData();
+        cooldownWeapon.SaveData();
+    }
+
+    public void ResetData()
+    {
+        intro.ResetData();
+        echo.ResetData();
+        resonance.ResetData();
+        ultimate.ResetData();
+        outro.ResetData();
+        element.ResetData();
+        inherit.ResetData();
+        weapon.ResetData();
+
+        cooldownIntro.ResetData();
+        cooldownEcho.ResetData();
+        cooldownResonance.ResetData();
+        cooldownUltimate.ResetData();
+        cooldownOutro.ResetData();
+        cooldownElement.ResetData();
+        cooldownInherit.ResetData();
+        cooldownWeapon.ResetData();
     }
 }

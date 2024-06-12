@@ -15,9 +15,19 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
         OverlayArea firstHero = new();
         OverlayArea secondHero = new();
         OverlayArea thirdHero = new();
+
         OverlayArea firstUltimate = new();
         OverlayArea secondUltimate = new();
         OverlayArea thirdUltimate = new();
+
+        OverlayArea firstConcert = new();
+        OverlayArea secondConcert = new();
+        OverlayArea thirdConcert = new();
+
+        OverlayArea firstForte = new();
+        OverlayArea secondForte = new();
+        OverlayArea thirdForte = new();
+
         public OverlayArea currentOverlay = new();
         public OverlayImages.OverlayImage originalArea;
         public OverlayImages.OverlayImage overlayArea;
@@ -75,6 +85,40 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                         currentOverlay.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
                         currentOverlay.isStopUpdateIfNewCharacter = true;
                         break;
+
+                    case "firstConcert":
+                        currentOverlay = firstConcert;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.firstHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+                    case "secondConcert":
+                        currentOverlay = secondConcert;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.secondHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+                    case "thirdConcert":
+                        currentOverlay = thirdConcert;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+
+                    case "firstForte":
+                        currentOverlay = firstForte;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.firstHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+                    case "secondForte":
+                        currentOverlay = secondForte;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.secondHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+                    case "thirdForte":
+                        currentOverlay = thirdForte;
+                        currentOverlay.currentCharacter = GameStates.Instance.currentTeam.thirdHero;
+                        currentOverlay.isStopUpdateIfNewCharacter = true;
+                        break;
+
+
                     default:
                         Debug.Write("fail");
                         break;
@@ -138,12 +182,31 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
             secondHero.originalArea.isCreated = false;
             thirdHero.overlayArea.isCreated = false;
             thirdHero.originalArea.isCreated = false;
+
             firstUltimate.overlayArea.isCreated = false;
             firstUltimate.originalArea.isCreated = false;
             secondUltimate.overlayArea.isCreated = false;
             secondUltimate.originalArea.isCreated = false;
             thirdUltimate.overlayArea.isCreated = false;
             thirdUltimate.originalArea.isCreated = false;
+
+            firstConcert.overlayArea.isCreated = false;
+            firstConcert.originalArea.isCreated = false;
+
+            secondConcert.overlayArea.isCreated = false;
+            secondConcert.originalArea.isCreated = false;
+
+            thirdConcert.overlayArea.isCreated = false;
+            thirdConcert.originalArea.isCreated = false;
+
+            firstForte.overlayArea.isCreated = false;
+            firstForte.originalArea.isCreated = false;
+
+            secondForte.overlayArea.isCreated = false;
+            secondForte.originalArea.isCreated = false;
+
+            thirdForte.overlayArea.isCreated = false;
+            thirdForte.originalArea.isCreated = false;
         }
         private void Button_Save(object sender, RoutedEventArgs e)
         {
@@ -170,9 +233,18 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                 FirstHero = firstHero,
                 SecondHero = secondHero,
                 ThirdHero = thirdHero,
+
                 UltimateArea1 = firstUltimate,
                 UltimateArea2 = secondUltimate,
-                UltimateArea3 = thirdUltimate
+                UltimateArea3 = thirdUltimate,
+
+                Concert1 = firstConcert,
+                Concert2 = secondConcert,
+                Concert3 = thirdConcert,
+
+                Forte1 = firstForte,
+                Forte2 = secondForte,
+                Forte3 = thirdForte,
             };
             settings.FirstHero.number = 1;
             settings.SecondHero.number = 2;
@@ -180,6 +252,7 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
             settings.UltimateArea1.number = 10;
             settings.UltimateArea2.number = 20;
             settings.UltimateArea3.number = 30;
+            settings.Concert1.number = 0;
             string jsonData = JsonConvert.SerializeObject(settings, Formatting.Indented);
             File.WriteAllText(filePath, jsonData);
         }
@@ -196,6 +269,16 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                 secondUltimate = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.UltimateArea2));
                 thirdUltimate = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.UltimateArea3));
 
+                firstConcert = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert1));
+                secondConcert = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert2));
+                thirdConcert = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Concert3));
+
+                firstForte = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte1));
+                secondForte = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte2));
+                thirdForte = JsonConvert.DeserializeObject<OverlayArea>(Convert.ToString(settings.Forte3));
+
+
+
             }
             else
             {
@@ -206,6 +289,16 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                 firstUltimate = new OverlayArea { number = 10 };
                 secondUltimate = new OverlayArea { number = 20 };
                 thirdUltimate = new OverlayArea { number = 30 };
+
+                firstConcert = new OverlayArea { number = 10 };
+                secondConcert = new OverlayArea { number = 20 };
+                thirdConcert = new OverlayArea { number = 30 };
+
+                firstForte = new OverlayArea { number = 10 };
+                secondForte = new OverlayArea { number = 20 };
+                thirdForte = new OverlayArea { number = 30 };
+
+
                 SaveJson();
             }
         }
