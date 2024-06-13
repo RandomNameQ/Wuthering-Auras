@@ -47,6 +47,7 @@
 		<None Remove="Assets\Elemental\Spectro.png" />
 		<None Remove="Assets\Elemental\Thunder.png" />
 		<None Remove="Assets\QuestMark.png" />
+		<None Remove="Xaml\Main\Taoqi.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -101,6 +102,7 @@
 		<Resource Include="Assets\Elemental\Spectro.png" />
 		<Resource Include="Assets\Elemental\Thunder.png" />
 		<Resource Include="Assets\QuestMark.png" />
+		<Resource Include="Xaml\Main\Taoqi.png" />
 	</ItemGroup>
 
 </Project>

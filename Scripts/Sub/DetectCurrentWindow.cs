@@ -27,7 +27,7 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Sub
 
         private bool IsWutheringWavesActive()
         {
-            const string partialWindowTitle = "Wuthering"; // Используем только часть названия окна для проверки
+            const string partialWindowTitle = "Wuthering Waves"; // Используем только часть названия окна для проверки
 
             nint handle = GetForegroundWindow();
             StringBuilder sb = new StringBuilder(256);

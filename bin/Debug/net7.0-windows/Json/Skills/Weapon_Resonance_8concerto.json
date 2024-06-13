@@ -1,0 +1,23 @@
+{
+  "isGlobal": true,
+  "isForNextCharacter": true,
+  "isCanselWhenChangeCharacter": true,
+  "isReusedIfSpam": true,
+  "isShowCooldown": true,
+  "isShowHotkeys": true,
+  "isShowHotkeysWhenHPressKey": true,
+  "isOutroActivate": true,
+  "isIntroActivate": true,
+  "isResonanceActivate": true,
+  "isEchoActivate": true,
+  "isUltimateActivate": true,
+  "image": "",
+  "name": "Weapon_Resonance_8concerto",
+  "description": "When cast resonance restore 8 concerto, trigeer 1 times evry 20sec.",
+  "duration": 20.0,
+  "chargesCount": 1,
+  "sourceCharacter": null,
+  "destintyCharacter": null,
+  "skillType": "Elemental",
+  "skillActionType": "Buff"
+}

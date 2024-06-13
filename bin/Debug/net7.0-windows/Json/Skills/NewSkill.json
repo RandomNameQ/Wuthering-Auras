@@ -1,0 +1,23 @@
+{
+  "isGlobal": true,
+  "isForNextCharacter": false,
+  "isCanselWhenChangeCharacter": false,
+  "isReusedIfSpam": true,
+  "isShowCooldown": true,
+  "isShowHotkeys": false,
+  "isShowHotkeysWhenHPressKey": true,
+  "isOutroActivate": false,
+  "isIntroActivate": false,
+  "isResonanceActivate": false,
+  "isEchoActivate": false,
+  "isUltimateActivate": false,
+  "image": "",
+  "name": "NewSkill",
+  "description": "NewDescription",
+  "duration": 666.0,
+  "chargesCount": 1,
+  "sourceCharacter": null,
+  "destintyCharacter": null,
+  "skillType": "Weapon",
+  "skillActionType": "Cooldown"
+}

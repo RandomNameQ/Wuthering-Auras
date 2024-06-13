@@ -44,3 +44,7 @@ C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfor
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\bin\Debug\net7.0-windows\Wuthering Waves comfort vision.pdb
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\ref\Wuthering Waves comfort vision.dll
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Wuthering Waves comfort vision_Content.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\SkillLibrary.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\SkillLibrary.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayIcon.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayIcon.baml

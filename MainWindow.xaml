@@ -15,7 +15,7 @@
         <!--   Icon="\Assets\Icon.ico"-->
         <!-- Определение колонок -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -72,6 +72,14 @@
                         </LinearGradientBrush>
                     </TextBlock.Background>
                 </TextBlock>
+                <TextBlock Text="Skills" MouseDown="TextBlock_Click_Skills" FontSize="25" Foreground="White" VerticalAlignment="Center" FontFamily="Arial">
+                    <TextBlock.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA64D6C"/>
+                            <GradientStop Color="#FF3E8B98" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Background>
+                </TextBlock>
 
 
             </StackPanel>
@@ -111,8 +119,8 @@
 
 
         <!-- Внутренний Grid для текста и фрейма -->
-        <Grid Grid.Column="1">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Grid Grid.Column="1" Margin="40">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                 <Frame x:Name="ContentFrame" NavigationUIVisibility="Hidden"/>
                 <CheckBox x:Name="CheckboxMain_DetectHotkey" 
                   Checked="Checkbox_Checked" 

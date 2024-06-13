@@ -1,15 +1,15 @@
 {
   "LastChosen": {
-    "name": "Тест",
+    "name": "Encore",
     "description": "",
     "firstHero": {
-      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Yangyang.png",
-      "name": "Yangyang",
+      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Encore.png",
+      "name": "Encore",
       "isAvaible": true,
       "shiftDelay": 1.0,
       "tier": null,
       "intro": {
-        "path": "",
+        "path": "C:\\Users\\zero\\Downloads\\Taoqi.png",
         "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
@@ -20,7 +20,7 @@
         "isShowCooldown": true,
         "isReusedIfSpam": true,
         "duration": 10.0,
-        "hotKeyToActivate": "Q",
+        "hotKeyToActivate": "E",
         "hotKeyDoubleTap": "Q",
         "width": 0,
         "height": 0,
@@ -31,7 +31,7 @@
           "y": 0,
           "tranparency": 0
         },
-        "elapsedTime": 0.0
+        "elapsedTime": 10.4508338
       },
       "echo": {
         "path": "",
@@ -209,7 +209,7 @@
         "elapsedTime": 0.0
       },
       "cooldownIntro": {
-        "path": "",
+        "path": "C:\\Users\\zero\\Downloads\\Danjin.png",
         "isCanRenderImage": false,
         "isGlobalBuff": false,
         "isBuffForNextCharacter": false,
@@ -227,11 +227,11 @@
         "overlayImageData": {
           "width": 50,
           "height": 50,
-          "x": 0,
-          "y": 0,
+          "x": 609,
+          "y": 854,
           "tranparency": 0
         },
-        "elapsedTime": 0.0
+        "elapsedTime": 10.0001328
       },
       "cooldownEcho": {
         "path": "",
@@ -410,8 +410,8 @@
       }
     },
     "secondHero": {
-      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Jianxin.png",
-      "name": "Jianxin",
+      "imagePath": "C:\\Users\\zero\\source\\repos\\Wuthering Waves comfort vision\\Wuthering Waves comfort vision\\bin\\Debug\\net7.0-windows\\Assets\\Characters\\Sanhua.png",
+      "name": "Sanhua",
       "isAvaible": true,
       "shiftDelay": 1.0,
       "tier": null,

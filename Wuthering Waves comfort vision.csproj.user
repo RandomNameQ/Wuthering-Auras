@@ -16,10 +16,16 @@
     <Compile Update="Xaml\Main\MoveScreenArea.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Xaml\Main\OverlayIcon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Xaml\Main\OverlayImages\OverlayImage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Xaml\Main\QOL.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Main\SkillLibrary.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Xaml\Sub\EchoList.xaml.cs">
@@ -45,10 +51,16 @@
     <Page Update="Xaml\Main\MoveScreenArea.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Xaml\Main\OverlayIcon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Xaml\Main\OverlayImages\OverlayImage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Xaml\Main\QOL.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\SkillLibrary.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Xaml\Sub\EchoList.xaml">

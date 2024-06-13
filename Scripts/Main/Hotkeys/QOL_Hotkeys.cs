@@ -112,27 +112,28 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main.Hotkeys
                     autoEvents.Add(AutoEvent.RunA, true);
                     StartTimer(ref timerA, Key.A);
                 }
-
             }
 
-            if (modifiers == ModifierKeys.Alt && key == Key.F && !autoEvents.ContainsKey(AutoEvent.Loot) && timerLoot == null && !isFPressedWithAlt && GameStates.Instance.qolHotkey.isAutoLoot)
+            if (modifiers == ModifierKeys.Alt && key == Key.F)
             {
-                autoEvents.Add(AutoEvent.Loot, true);
-                StartTimer(ref timerLoot, Key.F);
+                if (!autoEvents.ContainsKey(AutoEvent.Loot) && timerLoot == null && !isFPressedWithAlt && GameStates.Instance.qolHotkey.isAutoLoot)
+                {
+                    autoEvents.Add(AutoEvent.Loot, true);
+                    StartTimer(ref timerLoot, Key.F);
 
-                var timer = new System.Timers.Timer();
-                timer.Interval = 300;
-                timer.Elapsed += OnTimerElapsed;
-                timer.AutoReset = false;
-                timer.Start();
-
-            }
-            else if (modifiers == ModifierKeys.Alt && key == Key.F && autoEvents.ContainsKey(AutoEvent.Loot) && isFPressedWithAlt && GameStates.Instance.qolHotkey.isAutoLoot)
-            {
-                timerLoot?.Stop();
-                timerLoot = null;
-                autoEvents.Remove(AutoEvent.Loot);
-                isFPressedWithAlt = false;
+                    var timer = new System.Timers.Timer();
+                    timer.Interval = 300;
+                    timer.Elapsed += OnTimerElapsed;
+                    timer.AutoReset = false;
+                    timer.Start();
+                }
+                else if (autoEvents.ContainsKey(AutoEvent.Loot) && isFPressedWithAlt && GameStates.Instance.qolHotkey.isAutoLoot)
+                {
+                    timerLoot?.Stop();
+                    timerLoot = null;
+                    autoEvents.Remove(AutoEvent.Loot);
+                    isFPressedWithAlt = false;
+                }
             }
 
             if (key == Key.S && GameStates.Instance.qolHotkey.isAutoRuning)
@@ -202,7 +203,6 @@ namespace Wuthering_Waves_comfort_vision.Scripts.Main.Hotkeys
             autoEvents.Remove(AutoEvent.RunD);
             autoEvents.Remove(AutoEvent.RunA);
         }
-
 
         [DllImport("user32.dll", SetLastError = true)]
         private static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, nuint dwExtraInfo);
