@@ -10,13 +10,14 @@ Displaying ult, concert, and forte charge levels.
 
 The program does not interact with the game in any way - there will be no ban.
 
-Latest Version: 1.0.1
-All versions are available here.
+All versions are here.
+https://github.com/RandomNameQ/Wuthering-Auras/releases
 
-Download Version 1.0.1
+Latest version 1.0.1
+https://github.com/RandomNameQ/Wuthering-Auras/releases/tag/v1.0.1
 
-Installation Guide (English)
-Watch the setup guide for version 1.0.1
+Guide in Russian how to configure version 1.0.1
+https://www.youtube.com/watch?v=EFV_FYts-VY&ab_channel=ExploringWutheringWaves
 
 Installation Instructions:
 Unzip the file.
