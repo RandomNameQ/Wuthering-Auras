@@ -24,6 +24,3 @@ Unzip the file.
 Create a team.
 Create an overlay.
 Add buffs.
-
-
-
