@@ -15,8 +15,9 @@ https://github.com/RandomNameQ/Wuthering-Auras/releases
 Последняя версия 1.0.1
 https://github.com/RandomNameQ/Wuthering-Auras/releases/tag/v1.0.1
 
-https://www.youtube.com/watch?v=EFV_FYts-VY&ab_channel=ExploringWutheringWaves
 Гайд на русском как настроить версию 1.0.1
+https://www.youtube.com/watch?v=EFV_FYts-VY&ab_channel=ExploringWutheringWaves
+
 
 
 Как установить на буквах:
