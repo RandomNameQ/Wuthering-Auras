@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\App.xaml
-121074000062
+14-376343300
 1-833470589
-442098202303
+46-1743465492
 208944542852
-MainWindow.xaml;Xaml\AppSettings.xaml;Xaml\Main\BuffOverlay.xaml;Xaml\Main\MoveScreenArea.xaml;Xaml\Main\OverlayIcon.xaml;Xaml\Main\OverlayImages\OverlayImage.xaml;Xaml\Main\QOL.xaml;Xaml\Main\SetTeams.xaml;Xaml\Main\SkillLibrary.xaml;Xaml\Sub\EchoList.xaml;Xaml\Sub\ElementalList.xaml;Xaml\Sub\HeroList.xaml;
+MainWindow.xaml;Xaml\AppSettings.xaml;Xaml\Main\BuffOverlay.xaml;Xaml\Main\IconCreator.xaml;Xaml\Main\MoveScreenArea.xaml;Xaml\Main\OverlayIcon.xaml;Xaml\Main\OverlayImages\OverlayImage.xaml;Xaml\Main\QOL.xaml;Xaml\Main\SetTeams.xaml;Xaml\Main\SkillLibrary.xaml;Xaml\Sub\EchoList.xaml;Xaml\Sub\ElementalList.xaml;Xaml\Sub\HeroList.xaml;Xaml\Sub\IconList.xaml;
 
 True
 

@@ -7,6 +7,11 @@ using System.Windows.Input;
 using System.Windows.Navigation;
 using Wuthering_Waves_comfort_vision.Scripts.Main;
 using Wuthering_Waves_comfort_vision.Scripts.Sub;
+using Wuthering_Waves_comfort_vision.Xaml;
+using Wuthering_Waves_comfort_vision.Xaml.Sub;
+using Application = System.Windows.Application;
+using MessageBox = System.Windows.MessageBox;
+
 namespace Wuthering_Waves_comfort_vision
 {
     /// <summary>
@@ -15,10 +20,10 @@ namespace Wuthering_Waves_comfort_vision
     public partial class MainWindow : System.Windows.Window
     {
         private readonly MainWindow_Helper helper;
-        private readonly string filePath = Path.Combine(Helper.jsonPath, "AppSettings.json");
-        private readonly AppSettings appSettings = new AppSettings();
-        private readonly DetectCurrentWindow detectCurrentWindow = new DetectCurrentWindow();
-        private readonly OverlayCharacter overlayCharacter = new OverlayCharacter();
+        public readonly string filePath = Path.Combine(Helper.jsonPath, "AppSettings.json");
+        public AppSettings appSettings = new AppSettings();
+        public readonly DetectCurrentWindow detectCurrentWindow = new DetectCurrentWindow();
+        public readonly OverlayCharacter overlayCharacter = new OverlayCharacter();
 
         public MainWindow()
         {
@@ -38,20 +43,31 @@ namespace Wuthering_Waves_comfort_vision
 
         private void ContentFrame_Navigated(object sender, NavigationEventArgs e)
         {
-            bool isMainWindow = e.Content is MainWindow;
+            CheckboxMain_DetectHotkey.Visibility = Visibility.Collapsed;
+            CheckboxMain_DetectHotkey_Wuthering.Visibility = Visibility.Collapsed;
+            CheckboxMain_RenderOverlayIfFocus.Visibility = Visibility.Collapsed;
+            CheckboxMain_RenderOverlay.Visibility = Visibility.Collapsed;
+            CheckboxMain_RenderBuffs.Visibility = Visibility.Collapsed;
+            CheckboxMain_SwitchMoveImagePosibility.Visibility = Visibility.Collapsed;
+            ButtonAddNewIcon.Visibility = Visibility.Collapsed;
 
-            CheckboxMain_DetectHotkey.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
-            CheckboxMain_DetectHotkey_Wuthering.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
-            CheckboxMain_RenderOverlayIfFocus.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
-            CheckboxMain_RenderOverlay.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
-            CheckboxMain_RenderBuffs.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
-            CheckboxMain_SwitchMoveImagePosibility.Visibility = isMainWindow ? Visibility.Visible : Visibility.Collapsed;
+            SaveJson(); // Save data when navigating away from MainWindow
 
-            SaveJson();
         }
+
+
         private void Click_MainWindow(object sender, MouseButtonEventArgs e)
         {
             ContentFrame.Content = null;
+
+            CheckboxMain_DetectHotkey.Visibility = Visibility.Visible;
+            CheckboxMain_DetectHotkey_Wuthering.Visibility = Visibility.Visible;
+            CheckboxMain_RenderOverlayIfFocus.Visibility = Visibility.Visible;
+            CheckboxMain_RenderOverlay.Visibility = Visibility.Visible;
+            CheckboxMain_RenderBuffs.Visibility = Visibility.Visible;
+            CheckboxMain_SwitchMoveImagePosibility.Visibility = Visibility.Visible;
+            ButtonAddNewIcon.Visibility = Visibility.Visible;
+
             LoadJson();
         }
         private void TextBlock_Click_SetTeam(object sender, MouseButtonEventArgs e)
@@ -95,7 +111,7 @@ namespace Wuthering_Waves_comfort_vision
 
 
 
-        private void LoadAppSettings()
+        public void LoadAppSettings()
         {
             GameStates.Instance.appSettings = appSettings;
         }
@@ -135,6 +151,29 @@ namespace Wuthering_Waves_comfort_vision
         {
             helper.Checkbox_Unchecked(sender, e);
         }
+
+        private void Button_AddNewIcon(object sender, RoutedEventArgs e)
+        {
+            if (UIHelper.ChangeButtonColorOnClick(sender)) return;
+
+            // Создаем новое окно
+            var window = new Window
+            {
+                Width = 900,
+                Height = 320,
+                WindowStartupLocation = WindowStartupLocation.CenterScreen,
+                Topmost = true,
+                ShowInTaskbar = false
+            };
+
+            var heroListPage = new HeroList();
+
+            heroListPage.HeroSelected += helper.CreateIconList;
+            heroListPage.LoadHeroButtons();
+            window.Content = heroListPage;
+            window.Show();
+        }
+
     }
 
 
@@ -157,10 +196,10 @@ namespace Wuthering_Waves_comfort_vision
 
     public class MainWindow_Helper
     {
-        MainWindow MainWindow;
+        MainWindow mainWindow;
         public MainWindow_Helper(MainWindow mainWindow)
         {
-            MainWindow = mainWindow;
+            this.mainWindow = mainWindow;
         }
         public void MainWindow_Closed(object sender, EventArgs e)
         {
@@ -168,7 +207,7 @@ namespace Wuthering_Waves_comfort_vision
         }
         public void OnWindowFocusChanged(bool isFocused)
         {
-            MainWindow.Dispatcher.Invoke(() =>
+            mainWindow.Dispatcher.Invoke(() =>
             {
                 if (isFocused)
                 {
@@ -190,32 +229,51 @@ namespace Wuthering_Waves_comfort_vision
                 }
             });
         }
+        public void CreateIconList(string name)
+        {
+            // Создаем новое окно
+            var window = new Window
+            {
+                Width = 200,
+                Height = 500,
+                WindowStartupLocation = WindowStartupLocation.CenterScreen,
+                Topmost = true,
+                ShowInTaskbar = false
+            };
+
+            var heroListPage = new IconList();
+
+            //heroListPage.HeroSelected += helper.CreateIconList;
+            //heroListPage.LoadHeroButtons();
+            window.Content = heroListPage;
+            window.Show();
+        }
         #region json
         public void LoadJson()
         {
             try
             {
                 // Проверяем, существует ли файл
-                if (File.Exists(MainWindow.filePath))
+                if (File.Exists(mainWindow.filePath))
                 {
                     // Чтение данных из файла
-                    string json = File.ReadAllText(MainWindow.filePath);
+                    string json = File.ReadAllText(mainWindow.filePath);
                     // Десериализация JSON в объект AppSettings
-                    MainWindow.appSettings = JsonConvert.DeserializeObject<AppSettings>(json);
+                    mainWindow.appSettings = JsonConvert.DeserializeObject<AppSettings>(json);
                 }
                 else
                 {
                     // Если файл не существует, создаем новый объект AppSettings
-                    MainWindow.appSettings = new AppSettings();
+                    mainWindow.appSettings = new AppSettings();
                     SaveJson();
                 }
-                MainWindow.CheckboxMain_DetectHotkey.IsChecked = MainWindow.appSettings.isDetectHotkey;
-                MainWindow.CheckboxMain_DetectHotkey_Wuthering.IsChecked = MainWindow.appSettings.isWutheringWindow;
+                mainWindow.CheckboxMain_DetectHotkey.IsChecked = mainWindow.appSettings.isDetectHotkey;
+                mainWindow.CheckboxMain_DetectHotkey_Wuthering.IsChecked = mainWindow.appSettings.isWutheringWindow;
                 // CheckboxMain_RenderOverlay.IsChecked = appSettings.isRenderCharacterOverlay;
-                MainWindow.CheckboxMain_RenderOverlayIfFocus.IsChecked = MainWindow.appSettings.isRenderIfWutherinfWindow;
-                MainWindow.CheckboxMain_SwitchMoveImagePosibility.IsChecked = MainWindow.appSettings.isCanControlPositionSizeIcon;
-                GameStates.Instance.appSettings = MainWindow.appSettings;
-                GlobalEvents.InvokeSwitchMoveImagePosibility(MainWindow.appSettings.isCanControlPositionSizeIcon);
+                mainWindow.CheckboxMain_RenderOverlayIfFocus.IsChecked = mainWindow.appSettings.isRenderIfWutherinfWindow;
+                mainWindow.CheckboxMain_SwitchMoveImagePosibility.IsChecked = mainWindow.appSettings.isCanControlPositionSizeIcon;
+                GameStates.Instance.appSettings = mainWindow.appSettings;
+                GlobalEvents.InvokeSwitchMoveImagePosibility(mainWindow.appSettings.isCanControlPositionSizeIcon);
             }
             catch (Exception ex)
             {
@@ -229,9 +287,9 @@ namespace Wuthering_Waves_comfort_vision
             {
                 // Добавим отладочный вывод перед сохранением
                 // Сериализация объекта AppSettings в JSON
-                string json = JsonConvert.SerializeObject(MainWindow.appSettings, Formatting.Indented);
+                string json = JsonConvert.SerializeObject(mainWindow.appSettings, Formatting.Indented);
                 // Запись JSON в файл
-                File.WriteAllText(MainWindow.filePath, json);
+                File.WriteAllText(mainWindow.filePath, json);
             }
             catch (Exception ex)
             {
@@ -245,38 +303,40 @@ namespace Wuthering_Waves_comfort_vision
         {
             if (EnsureCurrentTeamExists())
             {
-                if (sender == MainWindow.CheckboxMain_DetectHotkey)
-                    MainWindow.appSettings.isDetectHotkey = true;
-                else if (sender == MainWindow.CheckboxMain_DetectHotkey_Wuthering)
-                    MainWindow.appSettings.isWutheringWindow = true;
-                else if (sender == MainWindow.CheckboxMain_RenderOverlayIfFocus)
-                    MainWindow.appSettings.isRenderIfWutherinfWindow = true;
-                else if (sender == MainWindow.CheckboxMain_RenderOverlay)
+                if (sender == mainWindow.CheckboxMain_DetectHotkey)
+                    mainWindow.appSettings.isDetectHotkey = true;
+                else if (sender == mainWindow.CheckboxMain_DetectHotkey_Wuthering)
+                    mainWindow.appSettings.isWutheringWindow = true;
+                else if (sender == mainWindow.CheckboxMain_RenderOverlayIfFocus)
+                    mainWindow.appSettings.isRenderIfWutherinfWindow = true;
+                else if (sender == mainWindow.CheckboxMain_RenderOverlay)
                     ToggleRenderCharacterOverlay(true);
-                else if (sender == MainWindow.CheckboxMain_RenderBuffs)
+                else if (sender == mainWindow.CheckboxMain_RenderBuffs)
                     ToggleRenderBuffsOverlay(true);
-                else if (sender == MainWindow.CheckboxMain_SwitchMoveImagePosibility)
+                else if (sender == mainWindow.CheckboxMain_SwitchMoveImagePosibility)
                     ToggleControlImagePosibility(true);
-                MainWindow.SaveSettings();
+                mainWindow.LoadAppSettings();
+                SaveJson();
             }
         }
         public void Checkbox_Unchecked(object sender, RoutedEventArgs e)
         {
             if (EnsureCurrentTeamExists())
             {
-                if (sender == MainWindow.CheckboxMain_DetectHotkey)
-                    MainWindow.appSettings.isDetectHotkey = false;
-                else if (sender == MainWindow.CheckboxMain_DetectHotkey_Wuthering)
-                    MainWindow.appSettings.isWutheringWindow = false;
-                else if (sender == MainWindow.CheckboxMain_RenderOverlayIfFocus)
-                    MainWindow.appSettings.isRenderIfWutherinfWindow = false;
-                else if (sender == MainWindow.CheckboxMain_RenderOverlay)
+                if (sender == mainWindow.CheckboxMain_DetectHotkey)
+                    mainWindow.appSettings.isDetectHotkey = false;
+                else if (sender == mainWindow.CheckboxMain_DetectHotkey_Wuthering)
+                    mainWindow.appSettings.isWutheringWindow = false;
+                else if (sender == mainWindow.CheckboxMain_RenderOverlayIfFocus)
+                    mainWindow.appSettings.isRenderIfWutherinfWindow = false;
+                else if (sender == mainWindow.CheckboxMain_RenderOverlay)
                     ToggleRenderCharacterOverlay(false);
-                else if (sender == MainWindow.CheckboxMain_RenderBuffs)
+                else if (sender == mainWindow.CheckboxMain_RenderBuffs)
                     ToggleRenderBuffsOverlay(false);
-                else if (sender == MainWindow.CheckboxMain_SwitchMoveImagePosibility)
+                else if (sender == mainWindow.CheckboxMain_SwitchMoveImagePosibility)
                     ToggleControlImagePosibility(false);
-                MainWindow.SaveSettings();
+                mainWindow.LoadAppSettings();
+                SaveJson();
             }
         }
         private bool EnsureCurrentTeamExists()
@@ -290,15 +350,15 @@ namespace Wuthering_Waves_comfort_vision
         }
         private void ToggleRenderCharacterOverlay(bool isEnabled)
         {
-            MainWindow.appSettings.isRenderCharacterOverlay = isEnabled;
+            mainWindow.appSettings.isRenderCharacterOverlay = isEnabled;
             if (isEnabled)
-                MainWindow.overlayCharacter.StartRenderOverlay();
+                mainWindow.overlayCharacter.StartRenderOverlay();
             else
-                MainWindow.overlayCharacter.StopRenderOverlay();
+                mainWindow.overlayCharacter.StopRenderOverlay();
         }
         private void ToggleRenderBuffsOverlay(bool isEnabled)
         {
-            MainWindow.appSettings.isRenderBuffsOverlay = isEnabled;
+            mainWindow.appSettings.isRenderBuffsOverlay = isEnabled;
             if (isEnabled)
             {
                 var app = (App)Application.Current;
@@ -313,7 +373,7 @@ namespace Wuthering_Waves_comfort_vision
         }
         private void ToggleControlImagePosibility(bool isEnabled)
         {
-            MainWindow.appSettings.isCanControlPositionSizeIcon = isEnabled;
+            mainWindow.appSettings.isCanControlPositionSizeIcon = isEnabled;
             GlobalEvents.InvokeSwitchMoveImagePosibility(isEnabled);
         }
         #endregion

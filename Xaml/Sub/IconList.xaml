@@ -1,0 +1,66 @@
+﻿<Page x:Class="Wuthering_Waves_comfort_vision.Xaml.Sub.IconList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wuthering_Waves_comfort_vision.Xaml.Sub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="300"
+      Title="IconList">
+
+    <Page.Resources>
+        <!-- Define a style for the buttons to avoid repeating properties -->
+        <Style x:Key="IconButtonStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Background" Value="#4C000000"/>
+            <!-- Add some margin to separate buttons -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF8F5975"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#3b8d99" Offset="0"/>
+                <GradientStop Color="#6b6b83" Offset="0.5"/>
+                <GradientStop Color="#aa4b6b" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- Use a StackPanel to arrange buttons one after another -->
+        <StackPanel x:Name="ButtonStackPanel" Margin="0,20,0,0">
+            <Button Content="Intro" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Echo" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Resonance" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Inherit1" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Inherit2" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Ultimate" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Outro" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Elemental" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+            <Button Content="Weapon" Style="{StaticResource IconButtonStyle}" Click="Button_ChooseIcon"/>
+        </StackPanel>
+
+        <Button Height="35" Click="Button_AddIcon" Content="Add icon" VerticalAlignment="Bottom" Margin="0,0,0,10" FontSize="25" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8F5975"/>
+                    <GradientStop Color="#FF3E8B98" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

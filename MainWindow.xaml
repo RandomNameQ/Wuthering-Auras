@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         xmlns:local="clr-namespace:Wuthering_Waves_comfort_vision.View"
-        Title="Wuthering waves"
-        Height="600" Width="920"
+        Title="Wuthering Auras"
+        Height="700" Width="920"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
@@ -194,6 +194,8 @@ FontSize="30"
 VerticalContentAlignment="Center" 
 HorizontalContentAlignment="Center"/>
 
+
+                <Button x:Name="ButtonAddNewIcon" Content="Add new icon" Background="#FF9EE2FF" Margin="20" FontSize="15" FontWeight="Bold" ClipToBounds="True" Click="Button_AddNewIcon" SnapsToDevicePixels="True" BorderThickness="3,3,3,3"  />
 
             </StackPanel>
 

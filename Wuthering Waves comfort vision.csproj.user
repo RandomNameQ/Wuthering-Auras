@@ -40,6 +40,12 @@
     <Compile Update="Xaml\Main\SetTeams.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Xaml\Main\IconCreator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Xaml\Sub\IconList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Xaml\AppSettings.xaml">
@@ -73,6 +79,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Xaml\Main\SetTeams.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Main\IconCreator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Xaml\Sub\IconList.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

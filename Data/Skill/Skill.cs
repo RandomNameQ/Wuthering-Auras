@@ -184,15 +184,17 @@ namespace Wuthering_Waves_comfort_vision.Data.Skill
         }
         #endregion
 
+
         public enum SkillType
         {
-            Elemental,
+            Intro,
             Echo,
             Resonance,
-            Liberation,
-            Inherit,
-            Intro,
+            Inherit1,
+            Inherit2,
+            Ultimate,
             Outro,
+            Elemental,
             Weapon
         }
 
@@ -202,9 +204,33 @@ namespace Wuthering_Waves_comfort_vision.Data.Skill
             Cooldown
         }
 
+        public enum CharacterVariant
+        {
+            Weapon,
+            Other,
+            Aalto,
+            Baizhi,
+            Calcharo,
+            Chixia,
+            Danjin,
+            Encore,
+            Jianxin,
+            Jiyan,
+            Lingyang,
+            Mortefi,
+            Rover,
+            Sanhua,
+            Taoqi,
+            Verina,
+            Yangyang,
+            Yinlin,
+            Yuanwu
+        }
+
         public string image { get; set; } = "";
         public string name { get; set; } = "NewSkill";
         public string description { get; set; } = "NewDescription";
+        public string hotkey { get; set; } = "xxxxxx";
         public double duration { get; set; } = 666;
         public int chargesCount { get; set; } = 1;
         public Character sourceCharacter { get; set; }
@@ -215,5 +241,8 @@ namespace Wuthering_Waves_comfort_vision.Data.Skill
 
         [JsonConverter(typeof(StringEnumConverter))]
         public SkillActionType skillActionType { get; set; } = SkillActionType.Buff;
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public CharacterVariant characterVariant { get; set; } = CharacterVariant.Weapon;
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using Wuthering_Waves_comfort_vision.Data.Skill;
 
 namespace Wuthering_Waves_comfort_vision.Xaml.Main
@@ -67,6 +68,8 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
         {
             TypeSkill.ItemsSource = Enum.GetNames(typeof(Skill.SkillType)).ToList();
             ActionTypeSkill.ItemsSource = Enum.GetNames(typeof(Skill.SkillActionType)).ToList();
+            CharacterVariant.ItemsSource = Enum.GetNames(typeof(Skill.CharacterVariant)).ToList();
+
             ComboBox_Skill.ItemsSource = _skills.Select(s => s.name).ToList();
         }
 
@@ -96,8 +99,10 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                 _skill = helper.LoadData(_skills, selectedSkillName);
 
                 OnPropertyChanged(nameof(Skill));
+                _skills = helper.LoadJson();
             }
         }
+
 
 
         private void Button_DeleteSkill(object sender, RoutedEventArgs e)
@@ -133,22 +138,40 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
 
         private void ComboBox_SkillType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (Skill == null) Skill = new();
+
             if (sender is ComboBox comboBox && comboBox.SelectedItem is string selectedString)
             {
                 if (Enum.TryParse(typeof(Skill.SkillType), selectedString, out object result))
                 {
-                    _skill.skillType = (Skill.SkillType)result;
+                    Skill.skillType = (Skill.SkillType)result;
                 }
             }
         }
 
         private void ComboBox_SkillActionType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (Skill == null) Skill = new();
+
             if (sender is ComboBox comboBox && comboBox.SelectedItem is string selectedString)
             {
                 if (Enum.TryParse(typeof(Skill.SkillActionType), selectedString, out object result))
                 {
-                    _skill.skillActionType = (Skill.SkillActionType)result;
+                    Skill.skillActionType = (Skill.SkillActionType)result;
+                }
+            }
+        }
+
+
+        private void ComboBox_CharacterVariant_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Skill == null) Skill = new();
+
+            if (sender is ComboBox comboBox && comboBox.SelectedItem is string selectedString)
+            {
+                if (Enum.TryParse(typeof(Skill.CharacterVariant), selectedString, out object result))
+                {
+                    Skill.characterVariant = (Skill.CharacterVariant)result;
                 }
             }
         }
@@ -156,7 +179,7 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
 
         private void DurationSkill_TextChanged(object sender, TextChangedEventArgs e)
         {
-            return;
+
             TextBox textBox = sender as TextBox;
             string text = UIHelper.AllowOnlyNumbers(textBox.Text);
             textBox.Text = text;
@@ -212,6 +235,7 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
         {
             _skill.description = DescriptionSkill.Text;
             _skill.name = NameSkill.Text;
+            _skill.hotkey = HotkeyTextBox.Text;
 
             if (double.TryParse(DurationSkill.Text, out double duration))
             {
@@ -227,6 +251,42 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
             }
 
         }
+
+
+        private void HotkeyTextBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            // Очистка TextBox
+            HotkeyTextBox.Clear();
+
+            // Проверка на модификаторы клавиш
+            string hotkey = "";
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                hotkey += "Ctrl + ";
+            }
+            if ((Keyboard.Modifiers & ModifierKeys.Alt) == ModifierKeys.Alt)
+            {
+                hotkey += "Alt + ";
+            }
+            if ((Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift)
+            {
+                hotkey += "Shift + ";
+            }
+
+            // Добавить основную клавишу
+            Key key = e.Key == Key.System ? e.SystemKey : e.Key; // Проверка на SystemKey для корректной обработки Alt + Key
+            hotkey += key.ToString();
+
+            // Отображение hotkey в TextBox
+            HotkeyTextBox.Text = hotkey;
+
+            // Сохранение hotkey в вашем объекте навыка или где это необходимо
+            _skill.hotkey = hotkey;
+
+            // Предотвращение системного звука для невалидных клавиш
+            e.Handled = true;
+        }
+
         #endregion
 
 
@@ -260,6 +320,7 @@ namespace Wuthering_Waves_comfort_vision.Xaml.Main
                 skillLibrary.DurationSkill.Text = skill.duration.ToString();
                 skillLibrary.ActionTypeSkill.SelectedItem = skill.skillActionType.ToString();
                 skillLibrary.TypeSkill.SelectedItem = skill.skillType.ToString();
+                skillLibrary.HotkeyTextBox.Text = skill.hotkey;
             }
             return skill;
         }

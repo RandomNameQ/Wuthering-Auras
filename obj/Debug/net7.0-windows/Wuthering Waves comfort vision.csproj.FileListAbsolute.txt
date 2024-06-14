@@ -48,3 +48,8 @@ C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfor
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\SkillLibrary.baml
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayIcon.g.cs
 C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\OverlayIcon.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\IconList.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Sub\IconList.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\IconCreator.g.cs
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\App.baml
+C:\Users\zero\source\repos\Wuthering Waves comfort vision\Wuthering Waves comfort vision\obj\Debug\net7.0-windows\Xaml\Main\IconCreator.baml

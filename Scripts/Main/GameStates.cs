@@ -13,10 +13,12 @@ public class GameStates
     public List<Elemental> Elemental { get; set; } = new List<Elemental>();
     public Team currentTeam;
     public bool isGameWindow;
-    public MainWindow.AppSettings appSettings = new();
+    public AppSettings appSettings = new();
 
     public Character currentCharacter;
-    private GameStates() { }
+    private GameStates()
+    {
+    }
 
     public QOL.HotkeysSettings qolHotkey = new();
 }

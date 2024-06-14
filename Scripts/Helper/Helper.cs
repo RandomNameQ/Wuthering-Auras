@@ -196,5 +196,10 @@ public static class Helper
         }
         return default;
     }
+
+    public static void ParsingHotkeys()
+    {
+
+    }
 }
 

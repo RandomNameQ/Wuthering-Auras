@@ -52,18 +52,18 @@ namespace Wuthering_Waves_comfort_vision.Xaml
             }
         }
 
+
+
         private void HeroButton_Click(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
-            var heroName = clickedButton?.Tag as string; // в зависимости от типа данных name в HeroState
+            var heroName = clickedButton?.Tag as string;
             _selectedHero = heroName;
-            // выполните здесь действия с помощью данных героя,
-            // например, сохраните его выбор или обновите интерфейс
+
         }
 
         private void PickHero_Click(object sender, RoutedEventArgs e)
         {
-            // Закрыть эту страницу и передать выбранного героя
             HeroSelected?.Invoke(_selectedHero);
             Window.GetWindow(this)?.Close();
         }

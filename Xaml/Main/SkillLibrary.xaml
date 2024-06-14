@@ -34,7 +34,7 @@
 
 
 
-                    <ComboBox x:Name="ComboBox_Skill" SelectedIndex="0"  Width="Auto" Margin="0,20,0,10" SelectionChanged="ComboBox_Skill_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold">
+                    <ComboBox x:Name="ComboBox_Skill" SelectedIndex="0"  Width="150" Margin="0,20,0,10" SelectionChanged="ComboBox_Skill_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold">
                     </ComboBox>
                     <Image Source="/Xaml/Main/Taoqi.png" />
                     <Button Margin="0,100,0,0" Content="Delete this skill" Background="#FF9A0000" FontSize="10" ClipToBounds="True" Click="Button_DeleteSkill" SnapsToDevicePixels="True" BorderThickness="3,3,3,3" Foreground="White"  />
@@ -64,6 +64,11 @@
                 <Label Content="Skill action" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="17" Foreground="White" FontWeight="Bold" />
 
                 <ComboBox x:Name="ActionTypeSkill"  SelectedIndex="0" Height="30" Width="Auto" Margin="0,0,0,10" SelectionChanged="ComboBox_SkillActionType_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold">
+
+                </ComboBox>
+
+                <Label Content="Character variant" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="17" Foreground="White" FontWeight="Bold" />
+                <ComboBox x:Name="CharacterVariant"  SelectedIndex="0" Height="30" Width="Auto" Margin="0,0,0,10" SelectionChanged="ComboBox_CharacterVariant_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold">
 
                 </ComboBox>
 
@@ -101,6 +106,8 @@
                 <CheckBox Content="Activate when ultimate" IsChecked="{Binding Skill.isUltimateActivate}" Background="White" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontSize="16" />
 
 
+                <Label Content="Hotkey" Foreground="White" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="HotkeyTextBox" Text="Press a key" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"  PreviewKeyDown="HotkeyTextBox_PreviewKeyDown" />
                 <Button Content="Save skill" Background="#FF9EFFBF" FontSize="15" FontWeight="Bold" ClipToBounds="True" Click="Button_SaveSkill" SnapsToDevicePixels="True" BorderThickness="3,3,3,3"  />
 
 

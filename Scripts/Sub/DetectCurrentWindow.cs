@@ -5,7 +5,7 @@ using System.Timers;
 
 namespace Wuthering_Waves_comfort_vision.Scripts.Sub
 {
-    internal class DetectCurrentWindow
+    public class DetectCurrentWindow
     {
         public event Action<bool> WindowFocusChanged;
 

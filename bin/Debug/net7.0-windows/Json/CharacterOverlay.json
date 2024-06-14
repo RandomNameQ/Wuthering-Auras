@@ -2,9 +2,9 @@
   "FirstHero": {
     "overlayArea": {
       "x": 800,
-      "y": 881,
-      "width": 103,
-      "height": 94
+      "y": 884,
+      "width": 113,
+      "height": 91
     },
     "originalArea": {
       "x": 1758,
@@ -19,10 +19,10 @@
   },
   "SecondHero": {
     "overlayArea": {
-      "x": 903,
-      "y": 881,
-      "width": 103,
-      "height": 94
+      "x": 891,
+      "y": 883,
+      "width": 115,
+      "height": 93
     },
     "originalArea": {
       "x": 1763,

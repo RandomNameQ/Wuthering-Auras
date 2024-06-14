@@ -2,6 +2,7 @@
 {
     public enum CharacterVariant
     {
+        Other,
         Aalto,
         Baizhi,
         Calcharo,
@@ -19,6 +20,5 @@
         Yangyang,
         Yinlin,
         Yuanwu
-
     }
 }
