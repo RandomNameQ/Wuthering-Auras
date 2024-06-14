@@ -1,16 +1,25 @@
-[![ru](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/RandomNameQ/Wuthering-Auras/blob/master/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://github.com/RandomNameQ/Wuthering-Auras/blob/master/README.md)
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/RandomNameQ/Wuthering-Auras/blob/master/README.en.md)
 
 
-Качай Wuthering.Auras.1.0.0.rar
-https://www.youtube.com/watch?v=EFV_FYts-VY&ab_channel=ExploringWutheringWaves тут гайд как настроить
+Wuthering Auras - software for displaying:
 
+Buffs on characters.
+Echo and resonance cooldowns for all characters.
+Displaying ult, concert, and forte charge levels.
+Latest Version: 1.0.1
+All versions are available here.
 
-1. Unzip.
-2. Create a team.
-3. Create an overlay.
-4. Create buffs.
+Download Version 1.0.1
 
+Installation Guide (English)
+Watch the setup guide for version 1.0.1
+
+Installation Instructions:
+Unzip the file.
+Create a team.
+Create an overlay.
+Add buffs.
 
 
 
