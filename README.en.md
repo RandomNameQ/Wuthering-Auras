@@ -7,6 +7,9 @@ Wuthering Auras - software for displaying:
 Buffs on characters.
 Echo and resonance cooldowns for all characters.
 Displaying ult, concert, and forte charge levels.
+
+The program does not interact with the game in any way - there will be no ban.
+
 Latest Version: 1.0.1
 All versions are available here.
 
